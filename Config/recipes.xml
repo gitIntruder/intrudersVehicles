@@ -62,7 +62,7 @@
       <ingredient name="resourceHeadlight" count="8"/>
     </recipe>
     <recipe name="vehicleKolunPlaceable" count="1" craft_area="workbench" craft_time="1800" tags="workbenchCrafting">
-      <ingredient name="vehicleWheels" count="4"/>
+      <ingredient name="vehicleWheels" count="6"/>
       <ingredient name="vehicleKolunAccessories" count="1"/>
       <ingredient name="vehicleKolunChassis" count="1"/>
       <ingredient name="smallEngine" count="1"/>

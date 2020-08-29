@@ -29,4 +29,7 @@
 		<item name="vehicleRoadsterAccessoriesSchematic"/>
 	</append>
 	<!--Intruders Vehicles - END-->
+
+  <!--Double probability of schematicsVehiclesRare Loot Group-->
+	<set xpath="/lootcontainer/lootgroup[@name='booksRareOnlyScaled']/item[@group='schematicsVehiclesRare']/@prob">16</set>
 </configs>
