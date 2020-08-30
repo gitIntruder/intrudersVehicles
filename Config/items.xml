@@ -20,7 +20,7 @@
       <property name="CustomIcon" value="vehicleAccItemIcon"/>
       <property name="DescriptionKey" value="vehicleATeamVanAccessoriesDesc"/>
       <property name="EconomicValue" value="10"/>
-      <property name="UnlockedBy" value="perkGreaseMonkey,vehicleATeamVanAccessoriesSchematic"/>
+      <property name="UnlockedBy" value="vehicleATeamVanAccessoriesSchematic"/>
     </item>
     <item name="vehicleATeamVanAccessoriesSchematic">
       <property name="Extends" value="schematicNoQualityMaster"/>
@@ -471,7 +471,7 @@
       <property name="DescriptionKey" value="vehicleF100AccessoriesDesc"/>
       <property name="EconomicValue" value="10"/>
     </item>
-    <!-- <item name="vehicleF100AccessoriesSchematic">
+    <item name="vehicleF100AccessoriesSchematic">
       <property name="Extends" value="schematicNoQualityMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="vehicleAccSchemItemIcon"/>
@@ -481,14 +481,14 @@
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
       </effect_group>
-    </item> -->
+    </item>
     <item name="vehicleF100Chassis">
       <property name="Extends" value="vehicleWheels"/>
       <property name="CustomIcon" value="f100ChassisItemIcon"/>
       <property name="DescriptionKey" value="vehicleF100ChassisDesc"/>
       <property name="EconomicValue" value="100"/>
     </item>
-    <!-- <item name="vehicleF100ChassisSchematic">
+    <item name="vehicleF100ChassisSchematic">
       <property name="Extends" value="schematicNoQualityMaster"/>
       <property name="CreativeMode" value="Player"/>
       <property name="CustomIcon" value="vehicleF100ChassisSchemItemIcon"/>
@@ -498,6 +498,6 @@
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
       </effect_group>
-    </item> -->
+    </item>
   </append>
 </configs>

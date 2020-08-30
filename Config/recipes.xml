@@ -191,14 +191,14 @@
     </recipe>
 
     <!--F100-->
-    <recipe name="vehicleF100Chassis" count="1" craft_area="workbench" tags="workbenchCrafting">
+    <recipe name="vehicleF100Chassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
       <ingredient name="resourceElectricParts" count="20"/>
       <ingredient name="resourceForgedSteel" count="400"/>
       <ingredient name="resourceMechanicalParts" count="50"/>
       <ingredient name="resourceDuctTape" count="40"/>
       <ingredient name="resourceMetalPipe" count="50"/>
     </recipe>
-    <recipe name="vehicleF100Accessories" count="1" craft_area="workbench" tags="workbenchCrafting">
+    <recipe name="vehicleF100Accessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
       <ingredient name="resourceForgedSteel" count="50"/>
       <ingredient name="resourceMechanicalParts" count="10"/>
       <ingredient name="resourceLeather" count="50"/>
