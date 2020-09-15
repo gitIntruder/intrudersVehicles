@@ -29,13 +29,17 @@
 		<item name="vehicleHearseAccessoriesSchematic"/>
 		<item name="vehicleRoadsterChassisSchematic"/>
 		<item name="vehicleRoadsterAccessoriesSchematic"/>
+		<item name="vehicleScramblerBlueChassisSchematic"/>
+    <item name="vehicleScramblerGreenChassisSchematic"/>
+	  <item name="vehicleScramblerRedChassisSchematic"/>
+	  <item name="vehicleScramblerAccessoriesSchematic"/>
 	</append>
 
 	<append xpath="/lootcontainers/lootgroup[@name='booksAllScaled']">
-	  <item group="schematicsVehiclesRare" prob="20"/>
+	  <item group="schematicsVehiclesRare" prob="5"/>
 	</append>
 	<!--Intruders Vehicles - END-->
 
   <!--Double probability of schematicsVehiclesRare Loot Group-->
-	<set xpath="/lootcontainer/lootgroup[@name='booksRareOnlyScaled']/item[@group='schematicsVehiclesRare']/@prob">20</set>
+	<!-- <set xpath="/lootcontainer/lootgroup[@name='booksRareOnlyScaled']/item[@group='schematicsVehiclesRare']/@prob">20</set> -->
 </configs>

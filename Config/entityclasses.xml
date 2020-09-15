@@ -18,6 +18,7 @@
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
       <property name="MapIcon" value="aTeamVanUIicon"/>
+      <property name="NavObject" value="aTeam"/>
     </entity_class>
     <entity_class name="vehicleMower">
       <property name="Tags" value="vehicle"/>
@@ -37,6 +38,7 @@
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
       <property name="MapIcon" value="mowerUIicon"/>
+      <property name="NavObject" value="mower"/>
     </entity_class>
     <entity_class name="vehicleKolun">
       <property name="Tags" value="vehicle"/>
@@ -56,6 +58,7 @@
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
       <property name="MapIcon" value="kolunUIicon"/>
+      <property name="NavObject" value="kolun"/>
     </entity_class>
     <entity_class name="vehicleAxel">
       <property name="Tags" value="vehicle"/>
@@ -75,6 +78,7 @@
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
       <property name="MapIcon" value="axelUIicon"/>
+      <property name="NavObject" value="axel"/>
     </entity_class>
     <entity_class name="vehicleAlpha">
       <property name="Tags" value="vehicle"/>
@@ -94,6 +98,7 @@
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
       <property name="MapIcon" value="alphaUIicon"/>
+      <property name="NavObject" value="alpha"/>
     </entity_class>
     <entity_class name="vehicleTumbler">
       <property name="Tags" value="vehicle"/>
@@ -113,6 +118,7 @@
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
       <property name="MapIcon" value="tumblerUIicon"/>
+      <property name="NavObject" value="tumbler" />
     </entity_class>
     <entity_class name="vehicleHearse">
       <property name="Tags" value="vehicle"/>
@@ -132,6 +138,7 @@
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
       <property name="MapIcon" value="hearseUIicon"/>
+      <property name="NavObject" value="hearse"/>
     </entity_class>
     <entity_class name="vehicleImperial">
       <property name="Tags" value="vehicle"/>
@@ -151,6 +158,7 @@
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
       <property name="MapIcon" value="imperialUIicon"/>
+      <property name="NavObject" value="imperial"/>
     </entity_class>
     <entity_class name="vehicleHalfTon">
       <property name="Tags" value="vehicle"/>
@@ -170,6 +178,7 @@
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
       <property name="MapIcon" value="halfTonUIicon"/>
+      <property name="NavObject" value="halfton"/>
     </entity_class>
     <entity_class name="vehicleRoadster">
       <property name="Tags" value="vehicle"/>
@@ -189,6 +198,7 @@
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
       <property name="MapIcon" value="roadsterUIicon"/>
+      <property name="NavObject" value="roadster"/>
     </entity_class>
     <entity_class name="vehicleF100">
       <property name="Tags" value="vehicle"/>
@@ -208,6 +218,67 @@
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
       <property name="MapIcon" value="f100UIicon"/>
+      <property name="NavObject" value="f100"/>
+    </entity_class>
+    <entity_class name="vehicleScramblerRed">
+      <property name="Tags" value="vehicle"/>
+      <property name="Class" value="EntityVJeep"/>
+      <property name="Parent" value="Cars"/>
+      <property name="Prefab" value="#@modfolder:Resources/scramblerRed.unity3d?scramblerRedPrefab.prefab"/>
+      <property name="ModelType" value="Standard"/>
+      <property name="SurfaceCategory" value="metal"/>
+      <property name="IgnoreTrigger" value="true"/>
+      <property name="LootListAlive" value="222"/>
+      <property name="IsEnemyEntity" value="false"/>
+      <property name="Explosion.ParticleIndex" value="6"/>
+      <property name="Explosion.RadiusBlocks" value="5"/>
+      <property name="Explosion.RadiusEntities" value="250"/>
+      <property name="Explosion.BlockDamage" value="100"/>
+      <property name="Explosion.EntityDamage" value="100"/>
+      <property name="RotateToGround" value="true"/>
+      <property name="Faction" value="none"/>
+      <property name="MapIcon" value="scramblerUIicon"/>
+      <property name="NavObject" value="scrambler" />
+    </entity_class>
+    <entity_class name="vehicleScramblerGreen">
+      <property name="Tags" value="vehicle"/>
+      <property name="Class" value="EntityVJeep"/>
+      <property name="Parent" value="Cars"/>
+      <property name="Prefab" value="#@modfolder:Resources/scramblerGreen.unity3d?scramblerGreenPrefab.prefab"/>
+      <property name="ModelType" value="Standard"/>
+      <property name="SurfaceCategory" value="metal"/>
+      <property name="IgnoreTrigger" value="true"/>
+      <property name="LootListAlive" value="222"/>
+      <property name="IsEnemyEntity" value="false"/>
+      <property name="Explosion.ParticleIndex" value="6"/>
+      <property name="Explosion.RadiusBlocks" value="5"/>
+      <property name="Explosion.RadiusEntities" value="250"/>
+      <property name="Explosion.BlockDamage" value="100"/>
+      <property name="Explosion.EntityDamage" value="100"/>
+      <property name="RotateToGround" value="true"/>
+      <property name="Faction" value="none"/>
+      <property name="MapIcon" value="scramblerUIicon"/>
+      <property name="NavObject" value="scrambler" />
+    </entity_class>
+    <entity_class name="vehicleScramblerBlue">
+      <property name="Tags" value="vehicle"/>
+      <property name="Class" value="EntityVJeep"/>
+      <property name="Parent" value="Cars"/>
+      <property name="Prefab" value="#@modfolder:Resources/scramblerBlue.unity3d?scramblerBluePrefab.prefab"/>
+      <property name="ModelType" value="Standard"/>
+      <property name="SurfaceCategory" value="metal"/>
+      <property name="IgnoreTrigger" value="true"/>
+      <property name="LootListAlive" value="222"/>
+      <property name="IsEnemyEntity" value="false"/>
+      <property name="Explosion.ParticleIndex" value="6"/>
+      <property name="Explosion.RadiusBlocks" value="5"/>
+      <property name="Explosion.RadiusEntities" value="250"/>
+      <property name="Explosion.BlockDamage" value="100"/>
+      <property name="Explosion.EntityDamage" value="100"/>
+      <property name="RotateToGround" value="true"/>
+      <property name="Faction" value="none"/>
+      <property name="MapIcon" value="scramblerUIicon"/>
+      <property name="NavObject" value="scrambler" />
     </entity_class>
   </append>
 </configs>

@@ -112,13 +112,14 @@
       <ingredient name="resourceMechanicalParts" count="20"/>
       <ingredient name="resourceLeather" count="80"/>
       <ingredient name="resourceElectricParts" count="60"/>
+      <ingredient name="resourceHeadlight" count="10"/>
     </recipe>
     <recipe name="vehicleAlphaPlaceable" count="1" craft_area="workbench" craft_time="1800" tags="workbenchCrafting">
       <ingredient name="vehicleAlphaWheel" count="4"/>
-      <ingredient name="resourceHeadlight" count="10"/>
+      <ingredient name="vehicleAlphaAccessories" count="1"/>
       <ingredient name="vehicleAlphaChassis" count="1"/>
-      <ingredient name="smallEngine" count="1"/>
-      <ingredient name="carBattery" count="1"/>
+      <ingredient name="smallEngine" count="2"/>
+      <ingredient name="carBattery" count="2"/>
     </recipe>
 
     <!--TUMBLER-->
@@ -209,6 +210,57 @@
       <ingredient name="vehicleWheels" count="4"/>
       <ingredient name="vehicleF100Accessories" count="1"/>
       <ingredient name="vehicleF100Chassis" count="1"/>
+      <ingredient name="smallEngine" count="1"/>
+      <ingredient name="carBattery" count="1"/>
+    </recipe>
+
+    <!--SCRAMBLER-->
+    <recipe name="vehicleScramblerRedChassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceElectricParts" count="10"/>
+      <ingredient name="resourceForgedSteel" count="200"/>
+      <ingredient name="resourceMechanicalParts" count="10"/>
+      <ingredient name="resourceDuctTape" count="15"/>
+      <ingredient name="resourceMetalPipe" count="20"/>
+    </recipe>
+    <recipe name="vehicleScramblerGreenChassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceElectricParts" count="10"/>
+      <ingredient name="resourceForgedSteel" count="200"/>
+      <ingredient name="resourceMechanicalParts" count="10"/>
+      <ingredient name="resourceDuctTape" count="15"/>
+      <ingredient name="resourceMetalPipe" count="20"/>
+    </recipe>
+    <recipe name="vehicleScramblerBlueChassis" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceElectricParts" count="10"/>
+      <ingredient name="resourceForgedSteel" count="200"/>
+      <ingredient name="resourceMechanicalParts" count="10"/>
+      <ingredient name="resourceDuctTape" count="15"/>
+      <ingredient name="resourceMetalPipe" count="20"/>
+    </recipe>
+    <recipe name="vehicleScramblerAccessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceForgedSteel" count="50"/>
+      <ingredient name="resourceMechanicalParts" count="10"/>
+      <ingredient name="resourceLeather" count="50"/>
+      <ingredient name="resourceElectricParts" count="40"/>
+      <ingredient name="resourceHeadlight" count="12"/>
+    </recipe>
+    <recipe name="vehicleScramblerRedPlaceable" count="1" craft_area="workbench" craft_time="600" tags="workbenchCrafting">
+      <ingredient name="vehicleWheels" count="4"/>
+      <ingredient name="vehicleScramblerAccessories" count="1"/>
+      <ingredient name="vehicleScramblerRedChassis" count="1"/>
+      <ingredient name="smallEngine" count="1"/>
+      <ingredient name="carBattery" count="1"/>
+    </recipe>
+    <recipe name="vehicleScramblerGreenPlaceable" count="1" craft_area="workbench" craft_time="600" tags="workbenchCrafting">
+      <ingredient name="vehicleWheels" count="4"/>
+      <ingredient name="vehicleScramblerAccessories" count="1"/>
+      <ingredient name="vehicleScramblerGreenChassis" count="1"/>
+      <ingredient name="smallEngine" count="1"/>
+      <ingredient name="carBattery" count="1"/>
+    </recipe>
+    <recipe name="vehicleScramblerBluePlaceable" count="1" craft_area="workbench" craft_time="600" tags="workbenchCrafting">
+      <ingredient name="vehicleWheels" count="4"/>
+      <ingredient name="vehicleScramblerAccessories" count="1"/>
+      <ingredient name="vehicleScramblerBlueChassis" count="1"/>
       <ingredient name="smallEngine" count="1"/>
       <ingredient name="carBattery" count="1"/>
     </recipe>
