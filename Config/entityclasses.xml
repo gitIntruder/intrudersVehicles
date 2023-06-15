@@ -1,14 +1,15 @@
 <configs>
   <append xpath="/entity_classes">
-    <entity_class name="vehicleATeamVan">
+    <!-- BLACK DEVILLE -->
+    <entity_class name="vehicleDevilleBlack">
       <property name="Tags" value="vehicle"/>
       <property name="Class" value="EntityVJeep"/>
       <property name="Parent" value="Cars"/>
-      <property name="Prefab" value="#@modfolder:Resources/aTeamVan.unity3d?aTeamVanPrefab.prefab"/>
+      <property name="Prefab" value="#@modfolder:Resources/devilleBlack.unity3d?vehicleDevilleBlack.prefab"/>
       <property name="ModelType" value="Standard"/>
       <property name="SurfaceCategory" value="metal"/>
       <property name="IgnoreTrigger" value="true"/>
-      <property name="LootListAlive" value="222"/>
+      <property name="LootListAlive" value="vehicle4x4Truck"/>
       <property name="IsEnemyEntity" value="false"/>
       <property name="Explosion.ParticleIndex" value="6"/>
       <property name="Explosion.RadiusBlocks" value="5"/>
@@ -17,18 +18,20 @@
       <property name="Explosion.EntityDamage" value="100"/>
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
-      <property name="MapIcon" value="aTeamVanUIicon"/>
-      <property name="NavObject" value="aTeam"/>
+      <property name="MapIcon" value="ui_game_symbol_4x4"/>
+      <property name="NavObject" value="4x4"/>
     </entity_class>
-    <entity_class name="vehicleMower">
+
+    <!-- BLUE DEVILLE -->
+    <entity_class name="vehicleDevilleBlue">
       <property name="Tags" value="vehicle"/>
       <property name="Class" value="EntityVJeep"/>
       <property name="Parent" value="Cars"/>
-      <property name="Prefab" value="#@modfolder:Resources/mower.unity3d?mowerPrefab"/>
+      <property name="Prefab" value="#@modfolder:Resources/devilleBlue.unity3d?vehicleDevilleBlue.prefab"/>
       <property name="ModelType" value="Standard"/>
       <property name="SurfaceCategory" value="metal"/>
       <property name="IgnoreTrigger" value="true"/>
-      <property name="LootListAlive" value="222"/>
+      <property name="LootListAlive" value="vehicle4x4Truck"/>
       <property name="IsEnemyEntity" value="false"/>
       <property name="Explosion.ParticleIndex" value="6"/>
       <property name="Explosion.RadiusBlocks" value="5"/>
@@ -37,18 +40,20 @@
       <property name="Explosion.EntityDamage" value="100"/>
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
-      <property name="MapIcon" value="mowerUIicon"/>
-      <property name="NavObject" value="mower"/>
+      <property name="MapIcon" value="ui_game_symbol_4x4"/>
+      <property name="NavObject" value="4x4"/>
     </entity_class>
-    <entity_class name="vehicleKolun">
+
+    <!-- GIGAHORSE -->
+    <entity_class name="vehicleGigahorse">
       <property name="Tags" value="vehicle"/>
       <property name="Class" value="EntityVJeep"/>
       <property name="Parent" value="Cars"/>
-      <property name="Prefab" value="#@modfolder:Resources/kolun.unity3d?kolunPrefab"/>
+      <property name="Prefab" value="#@modfolder:Resources/gigahorse.unity3d?vehicleGigahorse.prefab"/>
       <property name="ModelType" value="Standard"/>
       <property name="SurfaceCategory" value="metal"/>
       <property name="IgnoreTrigger" value="true"/>
-      <property name="LootListAlive" value="222"/>
+      <property name="LootListAlive" value="vehicle4x4Truck"/>
       <property name="IsEnemyEntity" value="false"/>
       <property name="Explosion.ParticleIndex" value="6"/>
       <property name="Explosion.RadiusBlocks" value="5"/>
@@ -57,18 +62,20 @@
       <property name="Explosion.EntityDamage" value="100"/>
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
-      <property name="MapIcon" value="kolunUIicon"/>
-      <property name="NavObject" value="kolun"/>
+      <property name="MapIcon" value="ui_game_symbol_4x4"/>
+      <property name="NavObject" value="4x4"/>
     </entity_class>
-    <entity_class name="vehicleAxel">
+
+    <!-- PLYMOUTH ROCK -->
+    <entity_class name="vehiclePlymouthRock">
       <property name="Tags" value="vehicle"/>
       <property name="Class" value="EntityVJeep"/>
       <property name="Parent" value="Cars"/>
-      <property name="Prefab" value="#@modfolder:Resources/axel.unity3d?axelPrefab"/>
+      <property name="Prefab" value="#@modfolder:Resources/plymouthRock.unity3d?vehiclePlymouthRock.prefab"/>
       <property name="ModelType" value="Standard"/>
       <property name="SurfaceCategory" value="metal"/>
       <property name="IgnoreTrigger" value="true"/>
-      <property name="LootListAlive" value="222"/>
+      <property name="LootListAlive" value="vehicle4x4Truck"/>
       <property name="IsEnemyEntity" value="false"/>
       <property name="Explosion.ParticleIndex" value="6"/>
       <property name="Explosion.RadiusBlocks" value="5"/>
@@ -77,18 +84,20 @@
       <property name="Explosion.EntityDamage" value="100"/>
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
-      <property name="MapIcon" value="axelUIicon"/>
-      <property name="NavObject" value="axel"/>
+      <property name="MapIcon" value="ui_game_symbol_4x4"/>
+      <property name="NavObject" value="4x4"/>
     </entity_class>
-    <entity_class name="vehicleAlpha">
+
+    <!-- LIGHT CYCLE GREEN -->
+    <entity_class name="vehicleLightCycleGreen">
       <property name="Tags" value="vehicle"/>
-      <property name="Class" value="EntityVJeep"/>
+      <property name="Class" value="EntityMotorcycle"/>
       <property name="Parent" value="Cars"/>
-      <property name="Prefab" value="#@modfolder:Resources/alpha.unity3d?alphaPrefab"/>
+      <property name="Prefab" value="#@modfolder:Resources/lightCycleGreen.unity3d?vehicleLightCycleGreen.prefab"/>
       <property name="ModelType" value="Standard"/>
       <property name="SurfaceCategory" value="metal"/>
       <property name="IgnoreTrigger" value="true"/>
-      <property name="LootListAlive" value="222"/>
+      <property name="LootListAlive" value="vehicleMotorcycle"/>
       <property name="IsEnemyEntity" value="false"/>
       <property name="Explosion.ParticleIndex" value="6"/>
       <property name="Explosion.RadiusBlocks" value="5"/>
@@ -97,18 +106,20 @@
       <property name="Explosion.EntityDamage" value="100"/>
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
-      <property name="MapIcon" value="alphaUIicon"/>
-      <property name="NavObject" value="alpha"/>
+      <property name="MapIcon" value="ui_game_symbol_motorcycle"/>
+      <property name="NavObject" value="motorcycle"/>
     </entity_class>
-    <entity_class name="vehicleTumbler">
+
+    <!-- LIGHT CYCLE PINK -->
+    <entity_class name="vehicleLightCyclePink">
       <property name="Tags" value="vehicle"/>
-      <property name="Class" value="EntityVJeep"/>
+      <property name="Class" value="EntityMotorcycle"/>
       <property name="Parent" value="Cars"/>
-      <property name="Prefab" value="#@modfolder:Resources/tumbler.unity3d?tumblerPrefab"/>
+      <property name="Prefab" value="#@modfolder:Resources/lightCyclePink.unity3d?vehicleLightCyclePink.prefab"/>
       <property name="ModelType" value="Standard"/>
       <property name="SurfaceCategory" value="metal"/>
       <property name="IgnoreTrigger" value="true"/>
-      <property name="LootListAlive" value="222"/>
+      <property name="LootListAlive" value="vehicleMotorcycle"/>
       <property name="IsEnemyEntity" value="false"/>
       <property name="Explosion.ParticleIndex" value="6"/>
       <property name="Explosion.RadiusBlocks" value="5"/>
@@ -117,18 +128,20 @@
       <property name="Explosion.EntityDamage" value="100"/>
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
-      <property name="MapIcon" value="tumblerUIicon"/>
-      <property name="NavObject" value="tumbler" />
+      <property name="MapIcon" value="ui_game_symbol_motorcycle"/>
+      <property name="NavObject" value="motorcycle"/>
     </entity_class>
-    <entity_class name="vehicleHearse">
+
+    <!-- LIGHT CYCLE RED -->
+    <entity_class name="vehicleLightCycleRed">
       <property name="Tags" value="vehicle"/>
-      <property name="Class" value="EntityVJeep"/>
+      <property name="Class" value="EntityMotorcycle"/>
       <property name="Parent" value="Cars"/>
-      <property name="Prefab" value="#@modfolder:Resources/hearse.unity3d?hearsePrefab.prefab"/>
+      <property name="Prefab" value="#@modfolder:Resources/lightCycleRed.unity3d?vehicleLightCycleRed.prefab"/>
       <property name="ModelType" value="Standard"/>
       <property name="SurfaceCategory" value="metal"/>
       <property name="IgnoreTrigger" value="true"/>
-      <property name="LootListAlive" value="222"/>
+      <property name="LootListAlive" value="vehicleMotorcycle"/>
       <property name="IsEnemyEntity" value="false"/>
       <property name="Explosion.ParticleIndex" value="6"/>
       <property name="Explosion.RadiusBlocks" value="5"/>
@@ -137,148 +150,96 @@
       <property name="Explosion.EntityDamage" value="100"/>
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
-      <property name="MapIcon" value="hearseUIicon"/>
-      <property name="NavObject" value="hearse"/>
+      <property name="MapIcon" value="ui_game_symbol_motorcycle"/>
+      <property name="NavObject" value="motorcycle"/>
     </entity_class>
-    <entity_class name="vehicleImperial">
+
+    <!-- LIGHT CYCLE BLUE -->
+    <entity_class name="vehicleLightCycleBlue">
       <property name="Tags" value="vehicle"/>
-      <property name="Class" value="EntityVJeep"/>
+      <property name="Class" value="EntityMotorcycle"/>
       <property name="Parent" value="Cars"/>
-      <property name="Prefab" value="#@modfolder:Resources/imperial.unity3d?imperialPrefab.prefab"/>
+      <property name="Prefab" value="#@modfolder:Resources/lightCycleBlue.unity3d?vehicleLightCycleBlue.prefab"/>
       <property name="ModelType" value="Standard"/>
       <property name="SurfaceCategory" value="metal"/>
       <property name="IgnoreTrigger" value="true"/>
-      <property name="LootListAlive" value="222"/>
-      <property name="IsEnemyEntity" value="false"/>
-      <property name="Explosion.ParticleIndex" value="6"/>
-      <property name="Explosion.RadiusBlocks" value="20"/>
-      <property name="Explosion.RadiusEntities" value="20"/>
-      <property name="Explosion.BlockDamage" value="5000"/>
-      <property name="Explosion.EntityDamage" value="5000"/>
-      <property name="RotateToGround" value="true"/>
-      <property name="Faction" value="none"/>
-      <property name="MapIcon" value="imperialUIicon"/>
-      <property name="NavObject" value="imperial"/>
-    </entity_class>
-    <entity_class name="vehicleHalfTon">
-      <property name="Tags" value="vehicle"/>
-      <property name="Class" value="EntityVJeep"/>
-      <property name="Parent" value="Cars"/>
-      <property name="Prefab" value="#@modfolder:Resources/halfton.unity3d?halftonPrefab.prefab"/>
-      <property name="ModelType" value="Standard"/>
-      <property name="SurfaceCategory" value="metal"/>
-      <property name="IgnoreTrigger" value="true"/>
-      <property name="LootListAlive" value="222"/>
-      <property name="IsEnemyEntity" value="false"/>
-      <property name="Explosion.ParticleIndex" value="6"/>
-      <property name="Explosion.RadiusBlocks" value="20"/>
-      <property name="Explosion.RadiusEntities" value="20"/>
-      <property name="Explosion.BlockDamage" value="5000"/>
-      <property name="Explosion.EntityDamage" value="5000"/>
-      <property name="RotateToGround" value="true"/>
-      <property name="Faction" value="none"/>
-      <property name="MapIcon" value="halfTonUIicon"/>
-      <property name="NavObject" value="halfton"/>
-    </entity_class>
-    <entity_class name="vehicleRoadster">
-      <property name="Tags" value="vehicle"/>
-      <property name="Class" value="EntityVJeep"/>
-      <property name="Parent" value="Cars"/>
-      <property name="Prefab" value="#@modfolder:Resources/roadster.unity3d?roadsterPrefab.prefab"/>
-      <property name="ModelType" value="Standard"/>
-      <property name="SurfaceCategory" value="metal"/>
-      <property name="IgnoreTrigger" value="true"/>
-      <property name="LootListAlive" value="222"/>
-      <property name="IsEnemyEntity" value="false"/>
-      <property name="Explosion.ParticleIndex" value="6"/>
-      <property name="Explosion.RadiusBlocks" value="20"/>
-      <property name="Explosion.RadiusEntities" value="20"/>
-      <property name="Explosion.BlockDamage" value="5000"/>
-      <property name="Explosion.EntityDamage" value="5000"/>
-      <property name="RotateToGround" value="true"/>
-      <property name="Faction" value="none"/>
-      <property name="MapIcon" value="roadsterUIicon"/>
-      <property name="NavObject" value="roadster"/>
-    </entity_class>
-    <entity_class name="vehicleF100">
-      <property name="Tags" value="vehicle"/>
-      <property name="Class" value="EntityVJeep"/>
-      <property name="Parent" value="Cars"/>
-      <property name="Prefab" value="#@modfolder:Resources/f100.unity3d?f100Prefab.prefab"/>
-      <property name="ModelType" value="Standard"/>
-      <property name="SurfaceCategory" value="metal"/>
-      <property name="IgnoreTrigger" value="true"/>
-      <property name="LootListAlive" value="222"/>
+      <property name="LootListAlive" value="vehicleMotorcycle"/>
       <property name="IsEnemyEntity" value="false"/>
       <property name="Explosion.ParticleIndex" value="6"/>
       <property name="Explosion.RadiusBlocks" value="5"/>
-      <property name="Explosion.RadiusEntities" value="250"/>
+      <property name="Explosion.RadiusEntities" value="5"/>
       <property name="Explosion.BlockDamage" value="100"/>
       <property name="Explosion.EntityDamage" value="100"/>
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
-      <property name="MapIcon" value="f100UIicon"/>
-      <property name="NavObject" value="f100"/>
+      <property name="MapIcon" value="ui_game_symbol_motorcycle"/>
+      <property name="NavObject" value="motorcycle"/>
     </entity_class>
-    <entity_class name="vehicleScramblerRed">
+
+    <!-- LIGHT CYCLE YELLOW -->
+    <entity_class name="vehicleLightCycleYellow">
       <property name="Tags" value="vehicle"/>
-      <property name="Class" value="EntityVJeep"/>
+      <property name="Class" value="EntityMotorcycle"/>
       <property name="Parent" value="Cars"/>
-      <property name="Prefab" value="#@modfolder:Resources/scramblerRed.unity3d?scramblerRedPrefab.prefab"/>
+      <property name="Prefab" value="#@modfolder:Resources/lightCycleYellow.unity3d?vehicleLightCycleYellow.prefab"/>
       <property name="ModelType" value="Standard"/>
       <property name="SurfaceCategory" value="metal"/>
       <property name="IgnoreTrigger" value="true"/>
-      <property name="LootListAlive" value="222"/>
+      <property name="LootListAlive" value="vehicleMotorcycle"/>
       <property name="IsEnemyEntity" value="false"/>
       <property name="Explosion.ParticleIndex" value="6"/>
       <property name="Explosion.RadiusBlocks" value="5"/>
-      <property name="Explosion.RadiusEntities" value="250"/>
+      <property name="Explosion.RadiusEntities" value="5"/>
       <property name="Explosion.BlockDamage" value="100"/>
       <property name="Explosion.EntityDamage" value="100"/>
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
-      <property name="MapIcon" value="scramblerUIicon"/>
-      <property name="NavObject" value="scrambler" />
+      <property name="MapIcon" value="ui_game_symbol_motorcycle"/>
+      <property name="NavObject" value="motorcycle"/>
     </entity_class>
-    <entity_class name="vehicleScramblerGreen">
+
+    <!-- CYBER TRUCK -->
+    <entity_class name="vehicleCyberTruck">
       <property name="Tags" value="vehicle"/>
       <property name="Class" value="EntityVJeep"/>
       <property name="Parent" value="Cars"/>
-      <property name="Prefab" value="#@modfolder:Resources/scramblerGreen.unity3d?scramblerGreenPrefab.prefab"/>
+      <property name="Prefab" value="#@modfolder:Resources/cyberTruck.unity3d?vehicleCyberTruck.prefab"/>
       <property name="ModelType" value="Standard"/>
       <property name="SurfaceCategory" value="metal"/>
       <property name="IgnoreTrigger" value="true"/>
-      <property name="LootListAlive" value="222"/>
+      <property name="LootListAlive" value="vehicle4x4Truck"/>
       <property name="IsEnemyEntity" value="false"/>
       <property name="Explosion.ParticleIndex" value="6"/>
       <property name="Explosion.RadiusBlocks" value="5"/>
-      <property name="Explosion.RadiusEntities" value="250"/>
+      <property name="Explosion.RadiusEntities" value="5"/>
       <property name="Explosion.BlockDamage" value="100"/>
       <property name="Explosion.EntityDamage" value="100"/>
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
-      <property name="MapIcon" value="scramblerUIicon"/>
-      <property name="NavObject" value="scrambler" />
+      <property name="MapIcon" value="ui_game_symbol_4x4"/>
+      <property name="NavObject" value="4x4"/>
     </entity_class>
-    <entity_class name="vehicleScramblerBlue">
+
+    <!-- MOTO -->
+    <!--<entity_class name="vehicleMoto">
       <property name="Tags" value="vehicle"/>
-      <property name="Class" value="EntityVJeep"/>
+      <property name="Class" value="EntityMotorcycle"/>
       <property name="Parent" value="Cars"/>
-      <property name="Prefab" value="#@modfolder:Resources/scramblerBlue.unity3d?scramblerBluePrefab.prefab"/>
+      <property name="Prefab" value="#@modfolder:Resources/moto.unity3d?vehicleMoto.prefab"/>
       <property name="ModelType" value="Standard"/>
       <property name="SurfaceCategory" value="metal"/>
       <property name="IgnoreTrigger" value="true"/>
-      <property name="LootListAlive" value="222"/>
+      <property name="LootListAlive" value="vehicleMotorcycle"/>
       <property name="IsEnemyEntity" value="false"/>
       <property name="Explosion.ParticleIndex" value="6"/>
       <property name="Explosion.RadiusBlocks" value="5"/>
-      <property name="Explosion.RadiusEntities" value="250"/>
+      <property name="Explosion.RadiusEntities" value="5"/>
       <property name="Explosion.BlockDamage" value="100"/>
       <property name="Explosion.EntityDamage" value="100"/>
       <property name="RotateToGround" value="true"/>
       <property name="Faction" value="none"/>
-      <property name="MapIcon" value="scramblerUIicon"/>
-      <property name="NavObject" value="scrambler" />
-    </entity_class>
+      <property name="MapIcon" value="lightCycleUIicon"/>
+      <property name="NavObject" value="lightCycle"/>
+    </entity_class>-->
   </append>
 </configs>

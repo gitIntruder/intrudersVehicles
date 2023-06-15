@@ -1,638 +1,273 @@
 <configs>
   <append xpath="/items">
-    <!-- A-TEAM VAN VEHICLE -->
-    <item name="vehicleATeamVanPlaceable">
+    <!-- DEVILLE -->
+    <item name="vehicleDevilleChassis">
+      <property name="Extends" value="vehicleWheels"/>
+      <property name="CustomIcon" value="devilleChassisUIicon"/>
+      <property name="Tags" value="vehiclesSkill"/>
+      <property name="EconomicValue" value="9000"/>
+      <property name="TraderStageTemplate" value="vehiclesT3.9"/>
+      <property name="UnlockedBy" value="craftingVehicles"/>
+    </item>
+    <item name="vehicleDevilleAccessories">
+      <property name="Extends" value="vehicleBicycleHandlebars"/>
+      <property name="CustomIcon" value="devilleAccessoriesUIicon"/>
+      <property name="Tags" value="vehiclesSkill"/>
+      <property name="EconomicValue" value="9000"/>
+      <property name="TraderStageTemplate" value="vehiclesT3.9"/>
+      <property name="UnlockedBy" value="craftingVehicles"/>
+    </item>
+    <item name="vehicleDevilleBlackPlaceable">
       <property name="Extends" value="vehicleMinibikePlaceable"/>
-      <property name="CustomIcon" value="aTeamVanItemIcon"/>
-      <property name="DescriptionKey" value="vehicleATeamVanPlaceableDesc"/>
-      <property name="Meshfile" value="#@modfolder:Resources/aTeamVan.unity3d?aTeamVanPrefab.prefab"/>
-      <property name="EconomicValue" value="2000"/>
+      <property name="CustomIcon" value="devilleBlackItemIcon"/>
+      <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
+      <property name="Meshfile" value="#@modfolder:Resources/devilleBlack.unity3d?vehicleDevilleBlack.prefab"/>
+      <property name="EconomicValue" value="15000"/>
+      <property name="TraderStageTemplate" value="vehiclesT3.9"/>
       <property class="Action1">
-        <property name="Vehicle" value="vehicleATeamVan"/>
-        <property name="VehicleSize" value="4.7, 4.8, 5"/>
+        <property name="Vehicle" value="vehicleDevilleBlack"/>
+        <property name="VehicleSize" value="2.5, 2.1, 5"/>
       </property>
-      <effect_group name="Base Effects">
-        <passive_effect name="DegradationMax" operation="base_set" value="100000"/>
+      <effect_group name="vehicleDevilleBlackPlaceable" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="5"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="7500"/>
       </effect_group>
     </item>
-    <item name="vehicleATeamVanAccessories">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="vehicleAccItemIcon"/>
-      <property name="DescriptionKey" value="vehicleATeamVanAccessoriesDesc"/>
-      <property name="EconomicValue" value="10"/>
-      <property name="UnlockedBy" value="vehicleATeamVanAccessoriesSchematic"/>
-    </item>
-    <item name="vehicleATeamVanAccessoriesSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleAccSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleATeamVanAccessories"/>
-      <property name="EconomicValue" value="17500"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleATeamVanAccessories" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-    <item name="vehicleATeamVanChassis">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="aTeamVanChassisItemIcon"/>
-      <property name="DescriptionKey" value="vehicleATeamVanChassisDesc"/>
-      <property name="EconomicValue" value="100"/>
-    </item>
-    <item name="vehicleATeamVanChassisSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleATeamChassisSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleATeamVanChassis"/>
-      <property name="EconomicValue" value="20000"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleATeamVanChassis" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+    <item name="vehicleDevilleBluePlaceable">
+      <property name="Extends" value="vehicleMinibikePlaceable"/>
+      <property name="CustomIcon" value="devilleBlueItemIcon"/>
+      <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
+      <property name="Meshfile" value="#@modfolder:Resources/devilleBlue.unity3d?vehicleDevilleBlue.prefab"/>
+      <property name="EconomicValue" value="15000"/>
+      <property name="TraderStageTemplate" value="vehiclesT3.9"/>
+      <property class="Action1">
+        <property name="Vehicle" value="vehicleDevilleBlue"/>
+        <property name="VehicleSize" value="2.5, 2.1, 5"/>
+      </property>
+      <effect_group name="vehicleDevilleBluePlaceable" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="5"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="7500"/>
       </effect_group>
     </item>
 
-    <!-- MOWER VEHICLE -->
-    <item name="vehicleMowerChassis">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="mowerChassisItemIcon"/>
-      <property name="DescriptionKey" value="vehicleMowerChassisDesc"/>
-      <property name="EconomicValue" value="100"/>
+    <!-- GIGAHORSE -->
+    <item name="vehicleGigahorseAccessories">
+      <property name="Extends" value="vehicleBicycleHandlebars"/>
+      <property name="CustomIcon" value="gigahorseAccessoriesUIicon"/>
+      <property name="Tags" value="vehiclesSkill"/>
+      <property name="EconomicValue" value="9000"/>
+      <property name="TraderStageTemplate" value="vehiclesT4.9"/>
+      <property name="UnlockedBy" value="craftingVehicles"/>
     </item>
-    <item name="vehicleMowerChassisSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleMowerChassisSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleMowerChassis"/>
+    <item name="vehicleGigahorsePlaceable">
+      <property name="Extends" value="vehicleMinibikePlaceable"/>
+      <property name="CustomIcon" value="gigahorseItemIcon"/>
+      <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
+      <property name="Meshfile" value="#@modfolder:Resources/gigahorse.unity3d?vehicleGigahorse.prefab"/>
+      <property name="EconomicValue" value="45000"/>
+      <property name="TraderStageTemplate" value="vehiclesT4.9"/>
+      <property class="Action1">
+        <property name="Vehicle" value="vehicleGigahorse"/>
+        <property name="VehicleSize" value="2.5, 2.1, 5"/>
+      </property>
+      <effect_group name="vehicleGigahorsePlaceable" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="5"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="15000"/>
+      </effect_group>
+    </item>
+
+    <!-- PLYMOUTH ROCK -->
+    <item name="vehiclePlymouthRockChassis">
+      <property name="Extends" value="vehicleWheels"/>
+      <property name="CustomIcon" value="prockChassisUIicon"/>
+      <property name="Tags" value="vehiclesSkill"/>
+      <property name="EconomicValue" value="9000"/>
+      <property name="TraderStageTemplate" value="vehiclesT4.9"/>
+      <property name="UnlockedBy" value="craftingVehicles"/>
+    </item>
+    <item name="vehiclePlymouthRockAccessories">
+      <property name="Extends" value="vehicleBicycleHandlebars"/>
+      <property name="CustomIcon" value="prockAccessoriesUIicon"/>
+      <property name="Tags" value="vehiclesSkill"/>
+      <property name="EconomicValue" value="9000"/>
+      <property name="TraderStageTemplate" value="vehiclesT4.9"/>
+      <property name="UnlockedBy" value="craftingVehicles"/>
+    </item>
+    <item name="vehiclePlymouthRockPlaceable">
+      <property name="Extends" value="vehicleMinibikePlaceable"/>
+      <property name="CustomIcon" value="plymouthRockItemIcon"/>
+      <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
+      <property name="Meshfile" value="#@modfolder:Resources/plymouthRock.unity3d?vehiclePlymouthRock.prefab"/>
+      <property name="EconomicValue" value="30000"/>
+      <property name="TraderStageTemplate" value="vehiclesT4.9"/>
+      <property class="Action1">
+        <property name="Vehicle" value="vehiclePlymouthRock"/>
+        <property name="VehicleSize" value="2.5, 2.1, 5"/>
+      </property>
+      <effect_group name="vehiclePlymouthRockPlaceable" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="5"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="11250"/>
+      </effect_group>
+    </item>
+
+    <!-- LIGHT CYCLE -->
+    <item name="vehicleLightCycleChassis">
+      <property name="Extends" value="vehicleWheels"/>
+      <property name="CustomIcon" value="lightCycleChassisUIicon"/>
+      <property name="Tags" value="vehiclesSkill"/>
+      <property name="EconomicValue" value="9000"/>
+      <property name="TraderStageTemplate" value="vehiclesT3.5"/>
+      <property name="UnlockedBy" value="craftingVehicles"/>
+    </item>
+    <item name="vehicleLightCycleAccessories">
+      <property name="Extends" value="vehicleBicycleHandlebars"/>
+      <property name="CustomIcon" value="lightCycleAccessoriesUIicon"/>
+      <property name="Tags" value="vehiclesSkill"/>
+      <property name="EconomicValue" value="9000"/>
+      <property name="TraderStageTemplate" value="vehicleT3.5"/>
+      <property name="UnlockedBy" value="craftingVehicles"/>
+    </item>
+    <item name="vehicleLightCycleGreenPlaceable">
+      <property name="Extends" value="vehicleMinibikePlaceable"/>
+      <property name="CustomIcon" value="lightCycleGreenItemIcon"/>
+      <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
+      <property name="Meshfile" value="#@modfolder:Resources/lightCycleGreen.unity3d?vehicleLightCycleGreen.prefab"/>
       <property name="EconomicValue" value="10000"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMowerChassis" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-    <item name="vehicleMowerAccessories">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="mowerAccessoriesItemIcon"/>
-      <property name="DescriptionKey" value="vehicleMowerAccessoriesDesc"/>
-      <property name="EconomicValue" value="10"/>
-    </item>
-    <item name="vehicleMowerAccessoriesSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleMowerAccSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleMowerAccessories"/>
-      <property name="EconomicValue" value="7500"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMowerAccessories" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-    <item name="vehicleMowerPlaceable">
-      <property name="Extends" value="vehicleMinibikePlaceable"/>
-      <property name="CustomIcon" value="mowerItemIcon"/>
-      <property name="DescriptionKey" value="vehicleMowerPlaceableDesc"/>
-      <property name="Meshfile" value="#@modfolder:Resources/mower.unity3d?mowerPrefab.prefab"/>
-      <property name="EconomicValue" value="1000"/>
+      <property name="TraderStageTemplate" value="vehiclesT3.5"/>
       <property class="Action1">
-        <property name="Vehicle" value="vehicleMower"/>
-        <property name="VehicleSize" value="4.7, 4.8, 5"/>
+        <property name="Vehicle" value="vehicleLightCycleGreen"/>
+        <property name="VehicleSize" value="2.5, 2.1, 5"/>
       </property>
-      <effect_group name="Base Effects">
-        <passive_effect name="DegradationMax" operation="base_set" value="10000"/>
+      <effect_group name="vehicleLightCycleGreenPlaceable" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="5"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+      </effect_group>
+    </item>
+    <item name="vehicleLightCyclePinkPlaceable">
+      <property name="Extends" value="vehicleMinibikePlaceable"/>
+      <property name="CustomIcon" value="lightCyclePinkItemIcon"/>
+      <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
+      <property name="Meshfile" value="#@modfolder:Resources/lightCyclePink.unity3d?vehicleLightCyclePink.prefab"/>
+      <property name="EconomicValue" value="10000"/>
+      <property name="TraderStageTemplate" value="vehiclesT3.5"/>
+      <property class="Action1">
+        <property name="Vehicle" value="vehicleLightCyclePink"/>
+        <property name="VehicleSize" value="2.5, 2.1, 5"/>
+      </property>
+      <effect_group name="vehicleLightCyclePinkPlaceable" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="5"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+      </effect_group>
+    </item>
+    <item name="vehicleLightCycleRedPlaceable">
+      <property name="Extends" value="vehicleMinibikePlaceable"/>
+      <property name="CustomIcon" value="lightCycleRedItemIcon"/>
+      <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
+      <property name="Meshfile" value="#@modfolder:Resources/lightCycleRed.unity3d?vehicleLightCycleRed.prefab"/>
+      <property name="EconomicValue" value="10000"/>
+      <property name="TraderStageTemplate" value="vehiclesT3.5"/>
+      <property class="Action1">
+        <property name="Vehicle" value="vehicleLightCycleRed"/>
+        <property name="VehicleSize" value="2.5, 2.1, 5"/>
+      </property>
+      <effect_group name="vehicleLightCycleRedPlaceable" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="5"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+      </effect_group>
+    </item>
+    <item name="vehicleLightCycleBluePlaceable">
+      <property name="Extends" value="vehicleMinibikePlaceable"/>
+      <property name="CustomIcon" value="lightCycleBlueItemIcon"/>
+      <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
+      <property name="Meshfile" value="#@modfolder:Resources/lightCycleBlue.unity3d?vehicleLightCycleBlue.prefab"/>
+      <property name="EconomicValue" value="10000"/>
+      <property name="TraderStageTemplate" value="vehiclesT3.5"/>
+      <property class="Action1">
+        <property name="Vehicle" value="vehicleLightCycleBlue"/>
+        <property name="VehicleSize" value="2.5, 2.1, 5"/>
+      </property>
+      <effect_group name="vehicleLightCycleBluePlaceable" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="5"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+      </effect_group>
+    </item>
+    <item name="vehicleLightCycleYellowPlaceable">
+      <property name="Extends" value="vehicleMinibikePlaceable"/>
+      <property name="CustomIcon" value="lightCycleYellowItemIcon"/>
+      <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
+      <property name="Meshfile" value="#@modfolder:Resources/lightCycleYellow.unity3d?vehicleLightCycleYellow.prefab"/>
+      <property name="EconomicValue" value="10000"/>
+      <property name="TraderStageTemplate" value="vehiclesT3.5"/>
+      <property class="Action1">
+        <property name="Vehicle" value="vehicleLightCycleYellow"/>
+        <property name="VehicleSize" value="2.5, 2.1, 5"/>
+      </property>
+      <effect_group name="vehicleLightCycleYellowPlaceable" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="5"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="7500"/>
       </effect_group>
     </item>
 
-    <!--KOLUN VEHICLE-->
-    <item name="vehicleKolunPlaceable">
+    <!-- CYBER TRUCK -->
+    <item name="vehicleCyberTruckChassis">
+      <property name="Extends" value="vehicleWheels"/>
+      <property name="CustomIcon" value="cyberTruckChassisUIicon"/>
+      <property name="Tags" value="vehiclesSkill"/>
+      <property name="EconomicValue" value="9000"/>
+      <property name="TraderStageTemplate" value="vehiclesT4.5"/>
+      <property name="UnlockedBy" value="craftingVehicles"/>
+    </item>
+    <item name="vehicleCyberTruckAccessories">
+      <property name="Extends" value="vehicleBicycleHandlebars"/>
+      <property name="CustomIcon" value="cyberTruckAccessoriesUIicon"/>
+      <property name="Tags" value="vehiclesSkill"/>
+      <property name="EconomicValue" value="9000"/>
+      <property name="TraderStageTemplate" value="vehiclesT4.5"/>
+      <property name="UnlockedBy" value="craftingVehicles"/>
+    </item>j
+    <item name="vehicleCyberTruckPlaceable">
       <property name="Extends" value="vehicleMinibikePlaceable"/>
-      <property name="CustomIcon" value="kolunItemIcon"/>
-      <property name="DescriptionKey" value="vehicleKolunPlaceableDesc"/>
-      <property name="Meshfile" value="#@modfolder:Resources/kolun.unity3d?kolunPrefab.prefab"/>
-      <property name="EconomicValue" value="2000"/>
+      <property name="CustomIcon" value="cyberTruckItemIcon"/>
+      <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
+      <property name="Meshfile" value="#@modfolder:Resources/cyberTruck.unity3d?vehicleCyberTruck.prefab"/>
+      <property name="EconomicValue" value="30000"/>
+      <property name="TraderStageTemplate" value="vehiclesT4.5"/>
       <property class="Action1">
-        <property name="Vehicle" value="vehicleKolun"/>
-        <property name="VehicleSize" value="4.7, 4.8, 5"/>
+        <property name="Vehicle" value="vehicleCyberTruck"/>
+        <property name="VehicleSize" value="2.5, 2.1, 5"/>
       </property>
-      <effect_group name="Base Effects">
-        <passive_effect name="DegradationMax" operation="base_set" value="100000"/>
-      </effect_group>
-    </item>
-    <item name="vehicleKolunAccessories">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="vehicleAccItemIcon"/>
-      <property name="DescriptionKey" value="vehicleKolunAccessoriesDesc"/>
-      <property name="EconomicValue" value="10"/>
-    </item>
-    <item name="vehicleKolunAccessoriesSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleAccSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleKolunAccessories"/>
-      <property name="EconomicValue" value="20000"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleKolunAccessories" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-    <item name="vehicleKolunChassis">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="kolunChassisItemIcon"/>
-      <property name="DescriptionKey" value="vehicleKolunChassisDesc"/>
-      <property name="EconomicValue" value="100"/>
-    </item>
-    <item name="vehicleKolunChassisSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleKolunChassisSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleKolunChassis"/>
-      <property name="EconomicValue" value="22500"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleKolunChassis" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+      <effect_group name="vehicleCyberTruckPlaceable" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="5"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="12500"/>
       </effect_group>
     </item>
 
-    <!--AXEL VEHICLE-->
-    <item name="vehicleAxelAxle">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="axelAxelItemIcon"/>
-      <property name="DescriptionKey" value="vehicleAxelAxleDesc"/>
-      <property name="EconomicValue" value="100"/>
-    </item>
-    <item name="vehicleAxelAxleSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleAxelAxleSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleAxelAxle"/>
-      <property name="EconomicValue" value="20000"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleAxelAxle" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-    <item name="vehicleAxelWheel">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="axelWheelItemIcon"/>
-      <property name="DescriptionKey" value="vehicleAxelWheelDesc"/>
-      <property name="EconomicValue" value="20"/>
-    </item>
-    <item name="vehicleAxelWheelSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleAxelWheelSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleAxelWheel"/>
-      <property name="EconomicValue" value="17500"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleAxelWheel" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-    <item name="vehicleAxelPlaceable">
+    <!-- MOTO -->
+    <!--<item name="vehicleMotoPlaceable">
       <property name="Extends" value="vehicleMinibikePlaceable"/>
-      <property name="CustomIcon" value="axelItemIcon"/>
-      <property name="DescriptionKey" value="vehicleAxelPlaceableDesc"/>
-      <property name="Meshfile" value="#@modfolder:Resources/axel.unity3d?axelPrefab.prefab"/>
-      <property name="EconomicValue" value="2000"/>
+      <property name="CustomIcon" value="lightCycleYellowItemIcon"/>
+      <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
+      <property name="Meshfile" value="#@modfolder:Resources/moto.unity3d?vehicleMoto.prefab"/>
+      <property name="EconomicValue" value="10000"/>
       <property class="Action1">
-        <property name="Vehicle" value="vehicleAxel"/>
-        <property name="VehicleSize" value="4.7, 4.8, 5"/>
+        <property name="Vehicle" value="vehicleMoto"/>
+        <property name="VehicleSize" value="2.5, 2.1, 5"/>
       </property>
-      <effect_group name="Base Effects">
-        <passive_effect name="DegradationMax" operation="base_set" value="15000"/>
+      <effect_group name="vehicleMotoPlaceable" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="5"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="7500"/>
       </effect_group>
-    </item>
-
-    <!--ALPHA VEHICLE-->
-    <item name="vehicleAlphaChassis">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="alphaChassisItemIcon"/>
-      <property name="DescriptionKey" value="vehicleAlphaChassisDesc"/>
-      <property name="EconomicValue" value="100"/>
-    </item>
-    <item name="vehicleAlphaChassisSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleAlphaChassisSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleAlphaChassis"/>
-      <property name="EconomicValue" value="22500"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleAlphaChassis" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-    <item name="vehicleAlphaWheel">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="alphaWheelItemIcon"/>
-      <property name="DescriptionKey" value="vehicleAlphaWheelDesc"/>
-      <property name="EconomicValue" value="20"/>
-    </item>
-    <item name="vehicleAlphaWheelSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleAlphaWheelSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleAlphaWheel"/>
-      <property name="EconomicValue" value="20000"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleAlphaWheel" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-    <item name="vehicleAlphaPlaceable">
-      <property name="Extends" value="vehicleMinibikePlaceable"/>
-      <property name="CustomIcon" value="alphaItemIcon"/>
-      <property name="DescriptionKey" value="vehicleAlphaPlaceableDesc"/>
-      <property name="Meshfile" value="#@modfolder:Resources/alpha.unity3d?alphaPrefab.prefab"/>
-      <property name="EconomicValue" value="2000"/>
-      <property class="Action1">
-        <property name="Vehicle" value="vehicleAlpha"/>
-        <property name="VehicleSize" value="4.7, 4.8, 5"/>
-      </property>
-      <effect_group name="Base Effects">
-        <passive_effect name="DegradationMax" operation="base_set" value="15000"/>
-      </effect_group>
-    </item>
-    <item name="vehicleAlphaAccessories">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="vehicleAccItemIcon"/>
-      <property name="DescriptionKey" value="vehicleAlphaAccessoriesDesc"/>
-      <property name="EconomicValue" value="10"/>
-    </item>
-    <item name="vehicleAlphaAccessoriesSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleAccSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleAlphaAccessories"/>
-      <property name="EconomicValue" value="20000"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleAlphaAccessories" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-
-    <!--TUMBLER VEHICLE-->
-    <item name="vehicleTumblerPlaceable">
-      <property name="Extends" value="vehicleMinibikePlaceable"/>
-      <property name="CustomIcon" value="tumblerItemIcon"/>
-      <property name="DescriptionKey" value="vehicleTumblerPlaceableDesc"/>
-      <property name="Meshfile" value="#@modfolder:Resources/tumbler.unity3d?tumblerPrefab.prefab"/>
-      <property name="EconomicValue" value="2000"/>
-      <property class="Action1">
-        <property name="Vehicle" value="vehicleTumbler"/>
-        <property name="VehicleSize" value="4.7, 4.8, 5"/>
-      </property>
-      <effect_group name="Base Effects">
-        <passive_effect name="DegradationMax" operation="base_set" value="15000"/>
-      </effect_group>
-    </item>
-    <item name="vehicleTumblerAccessories">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="vehicleAccItemIcon"/>
-      <property name="DescriptionKey" value="vehicleTumblerAccessoriesDesc"/>
-      <property name="EconomicValue" value="10"/>
-    </item>
-    <item name="vehicleTumblerAccessoriesSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleAccSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleTumblerAccessories"/>
-      <property name="EconomicValue" value="20000"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleTumblerAccessories" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-    <item name="vehicleTumblerChassis">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="tumblerChassisItemIcon"/>
-      <property name="DescriptionKey" value="vehicleTumblerChassisDesc"/>
-      <property name="EconomicValue" value="100"/>
-    </item>
-    <item name="vehicleTumblerChassisSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleTumblerChassisSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleTumblerChassis"/>
-      <property name="EconomicValue" value="22500"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleTumblerChassis" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-
-    <!--HEARSE VEHICLE-->
-    <item name="vehicleHearsePlaceable">
-      <property name="Extends" value="vehicleMinibikePlaceable"/>
-      <property name="CustomIcon" value="hearseItemIcon"/>
-      <property name="DescriptionKey" value="vehicleHearsePlaceableDesc"/>
-      <property name="Meshfile" value="#@modfolder:Resources/hearse.unity3d?hearsePrefab.prefab"/>
-      <property name="EconomicValue" value="2000"/>
-      <property class="Action1">
-        <property name="Vehicle" value="vehicleHearse"/>
-        <property name="VehicleSize" value="4.7, 4.8, 5"/>
-      </property>
-      <effect_group name="Base Effects">
-        <passive_effect name="DegradationMax" operation="base_set" value="100000"/>
-      </effect_group>
-    </item>
-    <item name="vehicleHearseAccessories">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="vehicleAccItemIcon"/>
-      <property name="DescriptionKey" value="vehicleHearseAccessoriesDesc"/>
-      <property name="EconomicValue" value="10"/>
-    </item>
-    <item name="vehicleHearseAccessoriesSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleAccSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleHearseAccessories"/>
-      <property name="EconomicValue" value="12500"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleHearseAccessories" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-    <item name="vehicleHearseChassis">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="hearseChassisItemIcon"/>
-      <property name="DescriptionKey" value="vehicleHearseChassisDesc"/>
-      <property name="EconomicValue" value="100"/>
-    </item>
-    <item name="vehicleHearseChassisSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleHearseChassisSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleHearseChassis"/>
-      <property name="EconomicValue" value="15000"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleHearseChassis" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-
-    <!--IMPERIAL VEHICLE-->
-    <item name="vehicleImperialPlaceable">
-      <property name="Extends" value="vehicleMinibikePlaceable"/>
-      <property name="CustomIcon" value="imperialItemIcon"/>
-      <property name="DescriptionKey" value="vehicleImperialPlaceableDesc"/>
-      <property name="Meshfile" value="#@modfolder:Resources/imperial.unity3d?imperialPrefab.prefab"/>
-      <property name="EconomicValue" value="2000"/>
-      <property class="Action1">
-        <property name="Vehicle" value="vehicleImperial"/>
-        <property name="VehicleSize" value="4.7, 4.8, 5"/>
-      </property>
-      <effect_group name="Base Effects">
-        <passive_effect name="DegradationMax" operation="base_set" value="1000"/>
-      </effect_group>
-    </item>
-
-    <!--HALF TON VEHICLE-->
-    <item name="vehicleHalfTonPlaceable">
-      <property name="Extends" value="vehicleMinibikePlaceable"/>
-      <property name="CustomIcon" value="halfTonItemIcon"/>
-      <property name="DescriptionKey" value="vehicleHalfTonPlaceableDesc"/>
-      <property name="Meshfile" value="#@modfolder:Resources/halfton.unity3d?halftonPrefab.prefab"/>
-      <property name="EconomicValue" value="2000"/>
-      <property class="Action1">
-        <property name="Vehicle" value="vehicleHalfTon"/>
-        <property name="VehicleSize" value="4.7, 4.8, 5"/>
-      </property>
-      <effect_group name="Base Effects">
-        <passive_effect name="DegradationMax" operation="base_set" value="1000"/>
-      </effect_group>
-    </item>
-
-    <!--ROADSTER VEHICLE-->
-    <item name="vehicleRoadsterPlaceable">
-      <property name="Extends" value="vehicleMinibikePlaceable"/>
-      <property name="CustomIcon" value="roadsterItemIcon"/>
-      <property name="DescriptionKey" value="vehicleRoadsterPlaceableDesc"/>
-      <property name="Meshfile" value="#@modfolder:Resources/roadster.unity3d?roadsterPrefab.prefab"/>
-      <property name="EconomicValue" value="2000"/>
-      <property class="Action1">
-        <property name="Vehicle" value="vehicleRoadster"/>
-        <property name="VehicleSize" value="4.7, 4.8, 5"/>
-      </property>
-      <effect_group name="Base Effects">
-        <passive_effect name="DegradationMax" operation="base_set" value="1000"/>
-      </effect_group>
-    </item>
-    <item name="vehicleRoadsterAccessories">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="vehicleAccItemIcon"/>
-      <property name="DescriptionKey" value="vehicleRoadsterAccessoriesDesc"/>
-      <property name="EconomicValue" value="10"/>
-    </item>
-    <item name="vehicleRoadsterAccessoriesSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleAccSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleRoadsterAccessories"/>
-      <property name="EconomicValue" value="15000"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleRoadsterAccessories" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-    <item name="vehicleRoadsterChassis">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="roadsterChassisItemIcon"/>
-      <property name="DescriptionKey" value="vehicleRoadsterChassisDesc"/>
-      <property name="EconomicValue" value="100"/>
-    </item>
-    <item name="vehicleRoadsterChassisSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleRoadsterChassisSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleRoadsterChassis"/>
-      <property name="EconomicValue" value="20000"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleRoadsterChassis" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-
-    <!--F100 VEHICLE-->
-    <item name="vehicleF100Placeable">
-      <property name="Extends" value="vehicleMinibikePlaceable"/>
-      <property name="CustomIcon" value="f100ItemIcon"/>
-      <property name="DescriptionKey" value="vehicleF100PlaceableDesc"/>
-      <property name="Meshfile" value="#@modfolder:Resources/f100.unity3d?f100Prefab.prefab"/>
-      <property name="EconomicValue" value="2000"/>
-      <property class="Action1">
-        <property name="Vehicle" value="vehicleF100"/>
-        <property name="VehicleSize" value="4.7, 4.8, 5"/>
-      </property>
-      <effect_group name="Base Effects">
-        <passive_effect name="DegradationMax" operation="base_set" value="1000"/>
-      </effect_group>
-    </item>
-    <item name="vehicleF100Accessories">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="vehicleAccItemIcon"/>
-      <property name="DescriptionKey" value="vehicleF100AccessoriesDesc"/>
-      <property name="EconomicValue" value="10"/>
-    </item>
-    <item name="vehicleF100AccessoriesSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleAccSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleF100Accessories"/>
-      <property name="EconomicValue" value="15000"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleF100Accessories" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-    <item name="vehicleF100Chassis">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="f100ChassisItemIcon"/>
-      <property name="DescriptionKey" value="vehicleF100ChassisDesc"/>
-      <property name="EconomicValue" value="100"/>
-    </item>
-    <item name="vehicleF100ChassisSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleF100ChassisSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleF100Chassis"/>
-      <property name="EconomicValue" value="20000"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleF100Chassis" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-
-    <!--SCRAMBLER VEHICLE-->
-    <item name="vehicleScramblerRedPlaceable">
-      <property name="Extends" value="vehicleMinibikePlaceable"/>
-      <property name="CustomIcon" value="scramblerRedItemIcon"/>
-      <property name="DescriptionKey" value="vehicleScramblerRedPlaceableDesc"/>
-      <property name="Meshfile" value="#@modfolder:Resources/scramblerRed.unity3d?scramblerRedPrefab.prefab"/>
-      <property name="EconomicValue" value="2000"/>
-      <property class="Action1">
-        <property name="Vehicle" value="vehicleScramblerRed"/>
-        <property name="VehicleSize" value="4.7, 4.8, 5"/>
-      </property>
-      <effect_group name="Base Effects">
-        <passive_effect name="DegradationMax" operation="base_set" value="1000"/>
-      </effect_group>
-    </item>
-    <item name="vehicleScramblerBluePlaceable">
-      <property name="Extends" value="vehicleMinibikePlaceable"/>
-      <property name="CustomIcon" value="scramblerBlueItemIcon"/>
-      <property name="DescriptionKey" value="vehicleScramblerBluePlaceableDesc"/>
-      <property name="Meshfile" value="#@modfolder:Resources/scramblerBlue.unity3d?scramblerBluePrefab.prefab"/>
-      <property name="EconomicValue" value="2000"/>
-      <property class="Action1">
-        <property name="Vehicle" value="vehicleScramblerBlue"/>
-        <property name="VehicleSize" value="4.7, 4.8, 5"/>
-      </property>
-      <effect_group name="Base Effects">
-        <passive_effect name="DegradationMax" operation="base_set" value="1000"/>
-      </effect_group>
-    </item>
-    <item name="vehicleScramblerGreenPlaceable">
-      <property name="Extends" value="vehicleMinibikePlaceable"/>
-      <property name="CustomIcon" value="scramblerGreenItemIcon"/>
-      <property name="DescriptionKey" value="vehicleScramblerGreenPlaceableDesc"/>
-      <property name="Meshfile" value="#@modfolder:Resources/scramblerGreen.unity3d?scramblerGreenPrefab.prefab"/>
-      <property name="EconomicValue" value="2000"/>
-      <property class="Action1">
-        <property name="Vehicle" value="vehicleScramblerGreen"/>
-        <property name="VehicleSize" value="4.7, 4.8, 5"/>
-      </property>
-      <effect_group name="Base Effects">
-        <passive_effect name="DegradationMax" operation="base_set" value="1000"/>
-      </effect_group>
-    </item>
-    <item name="vehicleScramblerAccessories">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="scramblerAccessoriesItemIcon"/>
-      <property name="DescriptionKey" value="vehicleScramblerAccessoriesDesc"/>
-      <property name="EconomicValue" value="10"/>
-    </item>
-    <item name="vehicleScramblerAccessoriesSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleScramblerAccSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleScramblerAccessories"/>
-      <property name="EconomicValue" value="12500"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleScramblerAccessories" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-    <item name="vehicleScramblerRedChassis">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="scramblerRedChassisItemIcon"/>
-      <property name="DescriptionKey" value="vehicleScramblerRedChassisDesc"/>
-      <property name="EconomicValue" value="100"/>
-    </item>
-    <item name="vehicleScramblerGreenChassis">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="scramblerGreenChassisItemIcon"/>
-      <property name="DescriptionKey" value="vehicleScramblerGreenChassisDesc"/>
-      <property name="EconomicValue" value="100"/>
-    </item>
-    <item name="vehicleScramblerBlueChassis">
-      <property name="Extends" value="vehicleWheels"/>
-      <property name="CustomIcon" value="scramblerBlueChassisItemIcon"/>
-      <property name="DescriptionKey" value="vehicleScramblerBlueChassisDesc"/>
-      <property name="EconomicValue" value="100"/>
-    </item>
-    <item name="vehicleScramblerRedChassisSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleScramblerRedChassisSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleScramblerChassis"/>
-      <property name="EconomicValue" value="15000"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleScramblerRedChassis" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-    <item name="vehicleScramblerGreenChassisSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleScramblerGreenChassisSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleScramblerChassis"/>
-      <property name="EconomicValue" value="15000"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleScramblerGreenChassis" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
-    <item name="vehicleScramblerBlueChassisSchematic">
-      <property name="Extends" value="schematicNoQualityMaster"/>
-      <property name="CreativeMode" value="Player"/>
-      <property name="CustomIcon" value="vehicleScramblerBlueChassisSchemItemIcon"/>
-      <property name="Unlocks" value="vehicleScramblerChassis"/>
-      <property name="EconomicValue" value="15000"/>
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleScramblerRedChassis" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleWheels" operation="set" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
-      </effect_group>
-    </item>
+    </item>-->
   </append>
 </configs>

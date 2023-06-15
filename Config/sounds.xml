@@ -1,74 +1,10 @@
 ﻿<configs>
   <append xpath="/Sounds">
-    <set xpath="/Sounds/SoundDataNode[@name='Auger_Idle']/AudioClip[@ClipName='Sounds/Weapons/Motorized/Auger/auger_idle']/@ClipName">#@modfolder:Resources/toolSounds.unity3d?auger_idle</set>
-    <set xpath="/Sounds/SoundDataNode[@name='Auger_Fire_Start']/AudioClip[@ClipName='Sounds/Weapons/Motorized/Auger/Auger_Fire_Start']/@ClipName">#@modfolder:Resources/toolSounds.unity3d?auger_fire_start</set>
-    <set xpath="/Sounds/SoundDataNode[@name='Auger_Fire_Start']/AudioClip[@ClipName='Sounds/Weapons/Motorized/Auger/auger_fire_lp']/@ClipName">#@modfolder:Resources/toolSounds.unity3d?auger_fire_lp</set>
-    <set xpath="/Sounds/SoundDataNode[@name='Auger_Fire_Start']/AudioClip[@ClipName='Sounds/Weapons/Motorized/Auger/auger_fire_end']/@ClipName">#@modfolder:Resources/toolSounds.unity3d?auger_fire_end</set>
-    <set xpath="/Sounds/SoundDataNode[@name='chainsaw_idle']/AudioClip[@ClipName='Sounds/Weapons/Motorized/Chainsaw/chainsaw_idle']/@ClipName">#@modfolder:Resources/toolSounds.unity3d?chainsaw_idle</set>
-    <set xpath="/Sounds/SoundDataNode[@name='chainsaw_fire_start']/AudioClip[@ClipName='Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_start']/@ClipName">#@modfolder:Resources/toolSounds.unity3d?chainsaw_fire_start</set>
-    <set xpath="/Sounds/SoundDataNode[@name='chainsaw_fire_start']/AudioClip[@ClipName='Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_lp']/@ClipName">#@modfolder:Resources/toolSounds.unity3d?chainsaw_fire_lp</set>
-    <set xpath="/Sounds/SoundDataNode[@name='chainsaw_fire_start']/AudioClip[@ClipName='Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_end']/@ClipName">#@modfolder:Resources/toolSounds.unity3d?chainsaw_fire_end</set>
-
-    <!--MOWER SOUNDS-->
-    <SoundDataNode name="mower_start">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/mowerSounds.unity3d?mower_start"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.01"/>
-    </SoundDataNode>
-    <SoundDataNode name="mower_running">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/mowerSounds.unity3d?mower_running" Loop="true"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.01"/>
-    </SoundDataNode>
-    <SoundDataNode name="mowerHorn">
-      <AudioSource name="Sounds/AudioSource_SmallHorn"/>
-      <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.4" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/mowerSounds.unity3d?mowerHorn"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.01"/>
-    </SoundDataNode>
-
-    <!--KOLUN SOUNDS-->
-    <SoundDataNode name="kolunHorn">
-      <AudioSource name="Sounds/AudioSource_SmallHorn"/>
-      <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.6" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/kolunSounds.unity3d?kolun_horn"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.01"/>
-    </SoundDataNode>
-    <SoundDataNode name="kolunIdle">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <AudioClip ClipName="#@modfolder:Resources/kolunSounds.unity3d?kolun_idle" Loop="true"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxRepeatRate value=".1"/>
-    </SoundDataNode>
-    <SoundDataNode name="kolunAccel1">
+    <!-- OLD CAR -->
+    <SoundDataNode name="oldCar_accel1">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
       <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/kolunSounds.unity3d?kolun_accel1"/>
+      <AudioClip ClipName="#@modfolder:Resources/oldCarSounds.unity3d?oldCar_accel1"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -76,10 +12,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="kolunAccel2">
+    <SoundDataNode name="oldCar_accel2">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
       <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/kolunSounds.unity3d?kolun_accel2"/>
+      <AudioClip ClipName="#@modfolder:Resources/oldCarSounds.unity3d?oldCar_accel1"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -87,10 +23,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="kolunAccel3">
+    <SoundDataNode name="oldCar_accel3">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
       <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/kolunSounds.unity3d?kolun_accel3"/>
+      <AudioClip ClipName="#@modfolder:Resources/oldCarSounds.unity3d?oldCar_accel3"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -98,10 +34,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="kolunDecel1">
+    <SoundDataNode name="oldCar_decel1">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
       <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/kolunSounds.unity3d?kolun_decel1"/>
+      <AudioClip ClipName="#@modfolder:Resources/oldCarSounds.unity3d?oldCar_decel1"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -109,10 +45,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="kolunDecel2">
+    <SoundDataNode name="oldCar_decel2">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
       <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/kolunSounds.unity3d?kolun_decel2"/>
+      <AudioClip ClipName="#@modfolder:Resources/oldCarSounds.unity3d?oldCar_decel2"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -120,10 +56,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="kolunMaxSpeed">
+    <SoundDataNode name="oldCar_max_speed">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
       <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/kolunSounds.unity3d?kolun_max_speed" Loop="true"/>
+      <AudioClip ClipName="#@modfolder:Resources/oldCarSounds.unity3d?oldCar_max_speed" Loop="true"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -131,65 +67,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="kolunStart">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/kolunSounds.unity3d?kolun_start"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.01"/>
-    </SoundDataNode>
-    <SoundDataNode name="kolunStop">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/kolunSounds.unity3d?kolun_stop"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.01"/>
-    </SoundDataNode>
-
-    <!--AXEL SOUNDS-->
-    <SoundDataNode name="axelStart">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/axelSounds.unity3d?axel_start"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.01"/>
-    </SoundDataNode>
-    <SoundDataNode name="axelKill">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/axelSounds.unity3d?axel_kill"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.01"/>
-    </SoundDataNode>
-    <SoundDataNode name="axelIdle">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <AudioClip ClipName="#@modfolder:Resources/axelSounds.unity3d?axel_idle" Loop="true"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxRepeatRate value=".1"/>
-    </SoundDataNode>
-    <SoundDataNode name="axelAccel1">
+    <SoundDataNode name="oldCar_idle">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
       <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/axelSounds.unity3d?axel_accel1"/>
+      <AudioClip ClipName="#@modfolder:Resources/oldCarSounds.unity3d?oldCar_idle" Loop="true"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -197,155 +78,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="axelAccel2">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/axelSounds.unity3d?axel_accel2"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="axelAccel3">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/axelSounds.unity3d?axel_accel3"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="axelDecel1">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/axelSounds.unity3d?axel_decel1"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="axelDecel2">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/axelSounds.unity3d?axel_decel2"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="axelMaxSpeed">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/axelSounds.unity3d?axel_max_speed" Loop="true"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="axelSpecial">
+    <SoundDataNode name="oldCarHorn">
       <AudioSource name="Sounds/AudioSource_SmallHorn"/>
       <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/axelSounds.unity3d?axel_special"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.01"/>
-    </SoundDataNode>
-
-    <!--ALPHA SOUNDS-->
-    <SoundDataNode name="alphaAccel1">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/alphaSounds.unity3d?alpha_accel1"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="alphaAccel2">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/alphaSounds.unity3d?alpha_accel2"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="alphaAccel3">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/alphaSounds.unity3d?alpha_accel3"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="alphaDecel1">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/alphaSounds.unity3d?alpha_decel1"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="alphaDecel2">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/alphaSounds.unity3d?alpha_decel2"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="alphaMaxSpeed">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/alphaSounds.unity3d?alpha_max_speed" Loop="true"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="alphaIdle">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/alphaSounds.unity3d?alpha_idle" Loop="true"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="alphaHorn">
-      <AudioSource name="Sounds/AudioSource_SmallHorn"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/alphaSounds.unity3d?alphaHorn"/>
+      <AudioClip ClipName="#@modfolder:Resources/oldCarSounds.unity3d?oldCarHorn"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -354,11 +90,111 @@
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
 
-    <!--A-TEAM VAN SOUNDS-->
-    <SoundDataNode name="aTeamHorn">
-      <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+    <!-- GIGAHORSE -->
+    <SoundDataNode name="gigahorse_horn">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="3" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/gigahorseSounds.unity3d?gigahorse_horn1"/>
+      <AudioClip ClipName="#@modfolder:Resources/gigahorseSounds.unity3d?gigahorse_horn2"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="gigahorse_startup">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/gigahorseSounds.unity3d?gigahorse_startup"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="gigahorse_idle">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
       <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/aTeamVanSounds.unity3d?aTeamTheme"/>
+      <AudioClip ClipName="#@modfolder:Resources/gigahorseSounds.unity3d?gigahorse_idle" Loop="true"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="gigahorse_accel1">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/gigahorseSounds.unity3d?gigahorse_accel1"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="gigahorse_accel2">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/gigahorseSounds.unity3d?gigahorse_accel2"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="gigahorse_accel3">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="1" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/gigahorseSounds.unity3d?gigahorse_accel3"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="gigahorse_max">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="2" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/gigahorseSounds.unity3d?gigahorse_max" Loop="true"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="gigahorse_decel1">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/gigahorseSounds.unity3d?gigahorse_decel1"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="gigahorse_decel2">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/gigahorseSounds.unity3d?gigahorse_decel2"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="gigahorse_shutoff">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.1" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/gigahorseSounds.unity3d?gigahorse_shutoff"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -367,11 +203,11 @@
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
 
-    <!--TUMBLER SOUNDS-->
-    <SoundDataNode name="tumblerStartHorn">
-      <AudioSource name="Sounds/AudioSource_SmallHorn"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/tumblerSounds.unity3d?tumbler_start_horn"/>
+    <!-- PLYMOUTH ROCK -->
+    <SoundDataNode name="prock_horn">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="3" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/plymouthRockSounds.unity3d?prock_horn"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -379,19 +215,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="tumblerIdle">
+    <SoundDataNode name="prock_startup">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <AudioClip ClipName="#@modfolder:Resources/tumblerSounds.unity3d?tumbler_idle" Loop="true"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxRepeatRate value=".1"/>
-    </SoundDataNode>
-    <SoundDataNode name="tumblerAccel1">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/tumblerSounds.unity3d?tumbler_accel1"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/plymouthRockSounds.unity3d?prock_startup"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -399,10 +226,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="tumblerAccel2">
+    <SoundDataNode name="prock_idle">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
       <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/tumblerSounds.unity3d?tumbler_accel2"/>
+      <AudioClip ClipName="#@modfolder:Resources/plymouthRockSounds.unity3d?prock_idle" Loop="true"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -410,10 +237,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="tumblerAccel3">
+    <SoundDataNode name="prock_accel1">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/tumblerSounds.unity3d?tumbler_accel3"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/plymouthRockSounds.unity3d?prock_accel1"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -421,10 +248,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="tumblerDecel1">
+    <SoundDataNode name="prock_accel2">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/tumblerSounds.unity3d?tumbler_decel1"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/plymouthRockSounds.unity3d?prock_accel2"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -432,10 +259,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="tumblerDecel2">
+    <SoundDataNode name="prock_accel3">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/tumblerSounds.unity3d?tumbler_decel2"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="1" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/plymouthRockSounds.unity3d?prock_accel3"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -443,10 +270,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="tumblerMaxSpeed">
+    <SoundDataNode name="prock_max">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/tumblerSounds.unity3d?tumbler_max_speed" Loop="true"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="2" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/plymouthRockSounds.unity3d?prock_max" Loop="true"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -454,12 +281,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-
-    <!--HEARSE SOUNDS-->
-    <SoundDataNode name="hearseHorn">
-      <AudioSource name="Sounds/AudioSource_SmallHorn"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/hearseSounds.unity3d?hearseHorn"/>
+    <SoundDataNode name="prock_decel1">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/plymouthRockSounds.unity3d?prock_decel1"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -467,19 +292,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="hearseIdle">
+    <SoundDataNode name="prock_decel2">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <AudioClip ClipName="#@modfolder:Resources/hearseSounds.unity3d?hearse_idle" Loop="true"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxRepeatRate value=".1"/>
-    </SoundDataNode>
-    <SoundDataNode name="hearseAccel1">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/hearseSounds.unity3d?hearse_accel1"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/plymouthRockSounds.unity3d?prock_decel2"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -487,177 +303,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="hearseAccel2">
+    <SoundDataNode name="prock_shutoff">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/hearseSounds.unity3d?hearse_accel2"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="hearseAccel3">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/hearseSounds.unity3d?hearse_accel3"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="hearseDecel1">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/hearseSounds.unity3d?hearse_decel1"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="hearseDecel2">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/hearseSounds.unity3d?hearse_decel2"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="hearseMaxSpeed">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/hearseSounds.unity3d?hearse_max_speed" Loop="true"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="hearseStart">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/hearseSounds.unity3d?hearse_start"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.01"/>
-    </SoundDataNode>
-
-    <!--ROADSTER SOUNDS-->
-    <SoundDataNode name="roadsterHorn">
-      <AudioSource name="Sounds/AudioSource_SmallHorn"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/roadsterSounds.unity3d?roadsterHorn"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="roadsterIdle">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <AudioClip ClipName="#@modfolder:Resources/roadsterSounds.unity3d?roadster_idle" Loop="true"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxRepeatRate value=".1"/>
-    </SoundDataNode>
-    <SoundDataNode name="roadsterAccel1">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/roadsterSounds.unity3d?roadster_accel1"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="roadsterAccel2">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/roadsterSounds.unity3d?roadster_accel2"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="roadsterAccel3">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/roadsterSounds.unity3d?roadster_accel3"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="roadsterDecel1">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/roadsterSounds.unity3d?roadster_decel1"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="roadsterDecel2">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/roadsterSounds.unity3d?roadster_decel2"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="roadsterMaxSpeed">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/roadsterSounds.unity3d?roadster_max_speed" Loop="true"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.1"/>
-    </SoundDataNode>
-    <SoundDataNode name="roadsterStart">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/roadsterSounds.unity3d?roadster_start"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.01"/>
-    </SoundDataNode>
-
-    <!--F100 SOUNDS-->
-    <SoundDataNode name="f100Horn">
-      <AudioSource name="Sounds/AudioSource_SmallHorn"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/f100Sounds.unity3d?f100_horn"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.1" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/plymouthRockSounds.unity3d?prock_shutoff"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -666,11 +315,13 @@
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
 
-    <!--SCRAMBLER SOUNDS-->
-    <SoundDataNode name="scramblerHorn">
-      <AudioSource name="Sounds/AudioSource_SmallHorn"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/scramblerSounds.unity3d?scrambler_horn"/>
+    <!-- LIGHT CYCLE -->
+    <SoundDataNode name="lightCycle_horn">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="3" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/lightCycleSounds.unity3d?lightCycle_horn1"/>
+      <AudioClip ClipName="#@modfolder:Resources/lightCycleSounds.unity3d?lightCycle_horn2"/>
+      <AudioClip ClipName="#@modfolder:Resources/lightCycleSounds.unity3d?lightCycle_horn3"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -678,19 +329,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="scramblerIdle">
+    <SoundDataNode name="lightCycle_startup">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <AudioClip ClipName="#@modfolder:Resources/scramblerSounds.unity3d?scrambler_idle" Loop="true"/>
-      <LocalCrouchVolumeScale value="1.0"/>
-      <CrouchNoiseScale value="1"/>
-      <NoiseScale value="1"/>
-      <MaxVoices value="3"/>
-      <MaxRepeatRate value=".1"/>
-    </SoundDataNode>
-    <SoundDataNode name="scramblerAccel1">
-      <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/scramblerSounds.unity3d?scrambler_accel1"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/lightCycleSounds.unity3d?lightCycle_startup"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -698,10 +340,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="scramblerAccel2">
+    <SoundDataNode name="lightCycle_idle">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
       <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/scramblerSounds.unity3d?scrambler_accel2"/>
+      <AudioClip ClipName="#@modfolder:Resources/lightCycleSounds.unity3d?lightCycle_idle" Loop="true"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -709,10 +351,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="scramblerAccel3">
+    <SoundDataNode name="lightCycle_accel1">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/scramblerSounds.unity3d?scrambler_accel3"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/lightCycleSounds.unity3d?lightCycle_accel1"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -720,10 +362,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="scramblerDecel1">
+    <SoundDataNode name="lightCycle_accel2">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/scramblerSounds.unity3d?scrambler_decel1"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/lightCycleSounds.unity3d?lightCycle_accel2"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -731,10 +373,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="scramblerDecel2">
+    <SoundDataNode name="lightCycle_accel3">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/scramblerSounds.unity3d?scrambler_decel2"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="1" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/lightCycleSounds.unity3d?lightCycle_accel3"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -742,10 +384,10 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="scramblerMaxSpeed">
+    <SoundDataNode name="lightCycle_max">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/scramblerSounds.unity3d?scrambler_max_speed" Loop="true"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="2" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/lightCycleSounds.unity3d?lightCycle_max" Loop="true"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -753,27 +395,162 @@
       <MaxEntities name="6"/>
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="scramblerStart">
+    <SoundDataNode name="lightCycle_decel1">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/scramblerSounds.unity3d?scrambler_start"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/lightCycleSounds.unity3d?lightCycle_decel1"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
       <MaxVoices value="3"/>
       <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.01"/>
+      <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
-    <SoundDataNode name="scramblerShutoff">
+    <SoundDataNode name="lightCycle_decel2">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
-      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/scramblerSounds.unity3d?scrambler_shutoff"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/lightCycleSounds.unity3d?lightCycle_decel2"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
       <MaxVoices value="3"/>
       <MaxEntities name="6"/>
-      <MaxRepeatRate value="0.01"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="lightCycle_shutoff">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.1" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/lightCycleSounds.unity3d?lightCycle_shutoff"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="lightCycle_empty">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.1" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/lightCycleSounds.unity3d?lightCycle_empty"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+
+    <!-- CYBER TRUCK -->
+    <SoundDataNode name="cyberTruck_horn">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="3" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/cyberTruckSounds.unity3d?cyberTruck_horn1"/>
+      <AudioClip ClipName="#@modfolder:Resources/cyberTruckSounds.unity3d?cyberTruck_horn2"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="cyberTruck_startup">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/cyberTruckSounds.unity3d?cyberTruck_startup"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="cyberTruck_idle">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/cyberTruckSounds.unity3d?cyberTruck_idle" Loop="true"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="cyberTruck_accel1">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/cyberTruckSounds.unity3d?cyberTruck_accel1"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="cyberTruck_accel2">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/cyberTruckSounds.unity3d?cyberTruck_accel2"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="cyberTruck_accel3">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="1" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/cyberTruckSounds.unity3d?cyberTruck_accel3"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="cyberTruck_max">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="2" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/cyberTruckSounds.unity3d?cyberTruck_max" Loop="true"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="cyberTruck_decel1">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/cyberTruckSounds.unity3d?cyberTruck_decel1"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="cyberTruck_decel2">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.5" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/cyberTruckSounds.unity3d?cyberTruck_decel2"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+    <SoundDataNode name="cyberTruck_shutoff">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="0.1" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/cyberTruckSounds.unity3d?cyberTruck_shutoff"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
   </append>
 </configs>
