@@ -90,12 +90,26 @@
       <MaxRepeatRate value="0.1"/>
     </SoundDataNode>
 
+    <!-- BIGFOOT -->
+    <SoundDataNode name="bigFoot_horn">
+      <AudioSource name="Sounds/AudioSource_Vehicle"/>
+      <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="3" heat_map_time="90"/>
+      <AudioClip ClipName="#@modfolder:Resources/hornSounds.unity3d?metal_horn1"/>
+      <AudioClip ClipName="#@modfolder:Resources/hornSounds.unity3d?truck_horn1"/>
+      <LocalCrouchVolumeScale value="1.0"/>
+      <CrouchNoiseScale value="1"/>
+      <NoiseScale value="1"/>
+      <MaxVoices value="3"/>
+      <MaxEntities name="6"/>
+      <MaxRepeatRate value="0.1"/>
+    </SoundDataNode>
+
     <!-- GIGAHORSE -->
     <SoundDataNode name="gigahorse_horn">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
       <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="3" heat_map_time="90"/>
       <AudioClip ClipName="#@modfolder:Resources/gigahorseSounds.unity3d?gigahorse_horn1"/>
-      <AudioClip ClipName="#@modfolder:Resources/gigahorseSounds.unity3d?gigahorse_horn2"/>
+      <AudioClip ClipName="#@modfolder:Resources/hornSounds.unity3d?truck_horn1"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -208,6 +222,7 @@
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
       <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="3" heat_map_time="90"/>
       <AudioClip ClipName="#@modfolder:Resources/plymouthRockSounds.unity3d?prock_horn"/>
+      <AudioClip ClipName="#@modfolder:Resources/hornSounds.unity3d?metal_horn2"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
@@ -319,9 +334,8 @@
     <SoundDataNode name="lightCycle_horn">
       <AudioSource name="Sounds/AudioSource_Vehicle"/>
       <Noise ID="4" range="30" volume="100" time="3" heat_map_strength="3" heat_map_time="90"/>
-      <AudioClip ClipName="#@modfolder:Resources/lightCycleSounds.unity3d?lightCycle_horn1"/>
-      <AudioClip ClipName="#@modfolder:Resources/lightCycleSounds.unity3d?lightCycle_horn2"/>
-      <AudioClip ClipName="#@modfolder:Resources/lightCycleSounds.unity3d?lightCycle_horn3"/>
+      <AudioClip ClipName="#@modfolder:Resources/hornSounds.unity3d?cyber_horn1"/>
+      <AudioClip ClipName="#@modfolder:Resources/hornSounds.unity3d?cyber_horn2"/>
       <LocalCrouchVolumeScale value="1.0"/>
       <CrouchNoiseScale value="1"/>
       <NoiseScale value="1"/>
