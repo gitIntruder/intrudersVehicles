@@ -52,6 +52,33 @@
       </effect_group>
     </item>
 
+    <!-- ECTO-1 -->
+    <item name="vehicleEcto1Placeable">
+      <property name="Extends" value="vehicleMinibikePlaceable"/>
+      <property name="CustomIcon" value="ecto1Icon"/>
+      <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
+      <property name="Meshfile" value="#@modfolder:Resources/ecto1.unity3d?vehicleEcto1.prefab"/>
+      <property name="EconomicValue" value="15000"/>
+      <property name="TraderStageTemplate" value="vehiclesT4.2"/>
+      <property class="Action1">
+        <property name="Vehicle" value="vehicleEcto1"/>
+        <property name="VehicleSize" value="2.5, 2.1, 5"/>
+      </property>
+      <effect_group name="vehicleEcto1Placeable" tiered="false">
+        <passive_effect name="ModSlots" operation="base_set" value="5"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+      </effect_group>
+    </item>
+    <item name="vehicleEcto1Accessories">
+      <property name="Extends" value="vehicleBicycleHandlebars"/>
+      <property name="CustomIcon" value="ecto1AccessoriesIcon"/>
+      <property name="Tags" value="vehiclesSkill"/>
+      <property name="EconomicValue" value="9000"/>
+      <property name="TraderStageTemplate" value="vehiclesT4.2"/>
+      <property name="UnlockedBy" value="craftingVehicles"/>
+    </item>
+
     <!-- FARGO -->
     <item name="vehicleFargoChassis">
       <property name="Extends" value="vehicleWheels"/>

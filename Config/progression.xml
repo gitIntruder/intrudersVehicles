@@ -15,6 +15,11 @@
     </display_entry>
   </insertAfter>
   <insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']/display_entry[@icon='cyberTruckIcon']">
+    <display_entry icon="ecto1Icon" name_key="vehiclesT4.2" has_quality="false" unlock_level="90" >
+      <unlock_entry item="vehicleEcto1Placeable,vehicleEcto1Accessories" unlock_tier="1" />
+    </display_entry>
+  </insertAfter>
+  <insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']/display_entry[@icon='ecto1Icon']">
     <display_entry icon="gigahorseIcon" name_key="vehiclesT4.9" has_quality="false" unlock_level="97" >
       <unlock_entry item="vehiclePlymouthRockPlaceable,vehiclePlymouthRockChassis,vehiclePlymouthRockAccessories,vehicleGigahorsePlaceable,vehicleGigahorseAccessories,vehicleBigFootSilverPlaceable,vehicleBigFootPurplePlaceable,vehicleBigFootAccessories" unlock_tier="1" />
     </display_entry>
@@ -24,6 +29,7 @@
     <passive_effect name="RecipeTagUnlocked" operation="base_set" level="55,100" value="1" tags="vehicleLightCycleGreenPlaceable,vehicleLightCyclePinkPlaceable,vehicleLightCycleRedPlaceable,vehicleLightCycleBluePlaceable,vehicleLightCycleYellowPlaceable,vehicleLightCycleChassis,vehicleLightCycleAccessories"/>
     <passive_effect name="RecipeTagUnlocked" operation="base_set" level="82,100" value="1" tags="vehicleDevilleBlackPlaceable,vehicleDevilleBluePlaceable,vehicleDevilleChassis,vehicleDevilleAccessories,vehicleFargoGreenPlaceable,vehicleFargoRedPlaceable,vehicleFargoChassis,vehicleFargoAccessories"/>
     <passive_effect name="RecipeTagUnlocked" operation="base_set" level="85,100" value="1" tags="vehicleCyberTruckPlaceable,vehicleCyberTruckChassis,vehicleCyberTruckAccessories"/>
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="90,100" value="1" tags="vehicleEcto1Placeable,vehicleEcto1Accessories"/>
     <passive_effect name="RecipeTagUnlocked" operation="base_set" level="97,100" value="1" tags="vehiclePlymouthRockPlaceable,vehiclePlymouthRockChassis,vehiclePlymouthRockAccessories,vehicleGigahorsePlaceable,vehicleGigahorseAccessories,vehicleBigFootSilverPlaceable,vehicleBigFootPurplePlaceable,vehicleBigFootAccessories"/>
   </append>
 </configs>

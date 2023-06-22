@@ -344,6 +344,172 @@
             </property>
         </vehicle>
 
+        <!-- ECTO-1 -->
+        <vehicle name="vehicleEcto1">
+            <property name="cameraDistance" value="5.5, 7"/>
+            <property name="cameraTurnRate" value=".2, .35"/>
+            <property name="motorTorqueMinQ" value="4000"/>
+            <property name="motorTorqueMaxQ" value="8000"/>
+            <property name="brakeTorque" value="8000"/>
+            <property name="upAngleMax" value="80"/>
+            <property name="upForce" value="1"/>
+            <property name="steerRate" value="130"/>
+            <property name="steerCenteringRate" value="90"/>
+            <property name="tiltAngleMax" value="80"/>
+            <property name="tiltThreshold" value="3"/>
+            <property name="tiltDampening" value=".22"/>
+            <property name="tiltDampenThreshold" value="8"/>
+            <property name="tiltUpForce" value="0"/>
+            <property name="unstickForce" value="1"/>
+            <property name="velocityMax" value="14, 17"/>
+            <property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
+            <property name="wheelPtlScale" value="1"/>
+
+            <property name="hornSound" value="ecto1_horn"/>
+
+            <property class="chassis">
+                <property name="class" value="Chassis"/>
+                <property name="display_name" value="chassis"/>
+                <property name="slot_type" value="chassis"/>
+                <property name="mesh" value="chassis"/>
+                <property name="transform" value="Origin"/>
+                <property name="paint" value="car_mesh"/>
+            </property>
+
+            <property class="engine">
+                <property name="class" value="Engine"/>
+                <property name="slot_type" value="engine"/>
+                <property name="mesh" value="engine_small"/>
+                <property name="transform" value="engine_small"/>
+                <property name="particle_transform" value="engine_small/MinibikeParticles/p_engine_fire"/>
+                <property name="fuelKmPerL" value=".3"/>
+                <property name="foodDrain" value=".002,.008"/><!-- driving/turbo, truck -->
+                <property name="gear1" value="
+								500,2500, -1400,800,0, 700,2200,900,
+								oldCar_accel1,
+								oldCar_decel1,
+								0, .7, 1, .1, -9, .12, .1, oldCar_idle,
+								-.4, -.02, .7, .7, -.2, 9, .2, oldCar_max_speed
+								"/>
+                <property name="gear2" value="
+								500,2500, -2000,1000,2000, 600,2200,800,
+								oldCar_accel2,
+								oldCar_decel1,
+								-.25, -.05, .2, .4, -1, 1, .1, oldCar_max_speed
+								"/>
+                <property name="gear3" value="
+								500,2500, -2000,1000,2000, 500,2200,1000,
+								oldCar_accel3,
+								oldCar_decel2,
+								-.28, -.07, .3, .6, -1, 1, .1, oldCar_max_speed
+								"/>
+                <property name="gear4" value="
+								500,2500, -2000,1000,2000, 500,9999,9999,
+								,
+								oldCar_decel2,
+								-.31, -.08, .6, .9, -1, 1, .1, oldCar_max_speed
+								"/>
+                <property name="sound_start" value="oldCar_start"/>
+                <property name="sound_shut_off" value="Vehicles/Suv/suv_shutoff"/>
+                <property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
+            </property>
+
+            <property class="fuelTank">
+                <property name="class" value="FuelTank"/>
+                <property name="capacity" value="70"/>
+            </property>
+
+            <property class="handlebars">
+                <property name="class" value="Steering"/>
+                <property name="slot_type" value="handlebars"/>
+                <property name="transform" value="Origin/steering_joint"/>
+                <property name="steerMaxAngle" value="60"/>
+                <property name="IKHandLPosition" value="-.154, .1256, .0265"/>
+                <property name="IKHandLRotation" value="37.55, -13.433, 49.88"/>
+                <property name="IKHandRPosition" value=".154, .1256, .0265"/>
+                <property name="IKHandRRotation" value="37.55, 13.433, -49.88"/>
+            </property>
+
+            <property class="seat0">
+                <property name="position" value="-0.52, 0.1, 0.9"/>
+                <property name="rotation" value="-35, 0, 0"/>
+                <property name="exit" value="-1.6,0,0 ~ 1.6,0,-1 ~ -.4,0,-2.8 ~ -.4,0,2.6 ~ -.4,2.1,0"/>
+            </property>
+
+            <property class="seat1">
+                <property name="class" value="Seat"/>
+                <property name="position" value="0.52, 0.1, 0.9"/>
+                <property name="rotation" value="-35, 0, 0"/>
+                <property name="exit" value="-1.6,0,0 ~ 1.6,0,-1 ~ -.4,0,-2.8 ~ -.4,0,2.6 ~ -.4,2.1,0"/>
+                <property name="IKHandLPosition" value="-.27, .87, .14"/>
+                <property name="IKHandLRotation" value="41, -30, 18"/>
+                <property name="IKHandRPosition" value=".27, .87, .14"/>
+                <property name="IKHandRRotation" value="41, 30, -18"/>
+            </property>
+
+            <property class="seat2">
+                <property name="class" value="Seat"/>
+                <property name="position" value="-0.52, 0.1, 0.1"/>
+                <property name="rotation" value="-35, 0, 0"/>
+                <property name="exit" value="-1.6,0,0 ~ 1.6,0,-1 ~ -.4,0,-2.8 ~ -.4,0,2.6 ~ -.4,2.1,0"/>
+                <property name="IKHandLPosition" value="-.27, .87, .14"/>
+                <property name="IKHandLRotation" value="41, -30, 18"/>
+                <property name="IKHandRPosition" value=".27, .87, .14"/>
+                <property name="IKHandRRotation" value="41, 30, -18"/>
+            </property>
+
+            <property class="seat3">
+                <property name="class" value="Seat"/>
+                <property name="position" value="0.52, 0.1, 0.1"/>
+                <property name="rotation" value="-35, 0, 0"/>
+                <property name="exit" value="-1.6,0,0 ~ 1.6,0,-1 ~ -.4,0,-2.8 ~ -.4,0,2.6 ~ -.4,2.1,0"/>
+                <property name="IKHandLPosition" value="-.27, .87, .14"/>
+                <property name="IKHandLRotation" value="41, -30, 18"/>
+                <property name="IKHandRPosition" value=".27, .87, .14"/>
+                <property name="IKHandRRotation" value="41, 30, -18"/>
+            </property>
+
+            <property class="wheel0">
+                <property name="steerTransform" value="Origin/frontLeftWheelStear_joint"/>
+                <property name="tireTransform" value="Origin/frontLeftWheelStear_joint/frontLeftWheel_joint"/>
+                <property name="tireSuspensionPercent" value="1"/>
+                <property name="torqueScale_motor_brake" value="1, .8"/>
+            </property>
+
+            <property class="wheel1">
+                <property name="steerTransform" value="Origin/frontRightWheelStear_joint"/>
+                <property name="tireTransform" value="Origin/frontRightWheelStear_joint/frontRightWheel_joint"/>
+                <property name="tireSuspensionPercent" value="1"/>
+                <property name="torqueScale_motor_brake" value="1, .8"/>
+            </property>
+
+            <property class="wheel2">
+                <property name="tireTransform" value="Origin/backLeftWheelJoint"/>
+                <property name="tireSuspensionPercent" value="1"/>
+                <property name="torqueScale_motor_brake" value="1, 1"/>
+            </property>
+
+            <property class="wheel3">
+                <property name="tireTransform" value="Origin/backRightWheelJoint"/>
+                <property name="tireSuspensionPercent" value="1"/>
+                <property name="torqueScale_motor_brake" value="1, 1"/>
+            </property>
+
+            <property class="headlight">
+                <property name="class" value="Headlight"/>
+                <property name="transform" value="Origin/headlight"/>
+                <property name="bright" value=".75"/>
+            </property>
+
+            <property class="storage">
+                <property name="class" value="Storage"/>
+                <property name="display_name" value="basket"/>
+                <property name="slot_type" value="basket"/>
+                <property name="mesh" value="basket"/>
+                <property name="transform" value="basket"/>
+            </property>
+        </vehicle>
+
         <!-- GREEN FARGO -->
         <vehicle name="vehicleFargoGreen">
             <property name="cameraDistance" value="5.5, 7"/>

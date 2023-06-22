@@ -231,5 +231,23 @@
       <ingredient name="smallEngine" count="2"/>
       <ingredient name="carBattery" count="2"/>
     </recipe>
+
+    <!-- ECTO-1 -->
+    <recipe name="vehicleEcto1Accessories" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+      <ingredient name="resourceForgedSteel" count="30"/>
+      <ingredient name="resourceHeadlight" count="12"/>
+      <ingredient name="resourceMetalPipe" count="60"/>
+      <ingredient name="resourceSpring" count="20"/>
+      <ingredient name="resourceMechanicalParts" count="40"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceMechanicalParts,resourceMetalPipe,resourceForgedSteel,resourceSpring"/>
+      </effect_group>
+    </recipe>
+    <recipe name="vehicleEcto1Placeable" count="1" craft_time="210" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="vehicleDevilleBluePlaceable" count="1"/>
+      <ingredient name="vehicleEcto1Accessories" count="1"/>
+      <ingredient name="smallEngine" count="1"/>
+      <ingredient name="carBattery" count="1"/>
+    </recipe>
   </append>
 </configs>
