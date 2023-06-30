@@ -19,6 +19,9 @@ Electric Vehicles use batteries as fuel.
 Requires 1 x Blue Deville to craft.
 
 ![](https://github.com/gitIntruder/intrudersVehicles/blob/master/Images/Ecto-1.png?raw=true)
+
+### Sherp
+![](https://github.com/gitIntruder/intrudersVehicles/blob/master/Images/Sherps.png?raw=true)
 ## Apocalyptic Vehicles
 ### Gigahorse
 Requires 2 x Black Devilles to craft.
