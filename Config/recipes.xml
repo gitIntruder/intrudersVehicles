@@ -249,5 +249,45 @@
       <ingredient name="smallEngine" count="1"/>
       <ingredient name="carBattery" count="1"/>
     </recipe>
+
+    <!-- SHERP -->
+    <recipe name="vehicleSherpAccessories" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+      <ingredient name="resourceForgedSteel" count="50"/>
+      <ingredient name="resourceHeadlight" count="2"/>
+      <ingredient name="resourceMetalPipe" count="75"/>
+      <ingredient name="resourceSpring" count="24"/>
+      <ingredient name="resourceMechanicalParts" count="30"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceMechanicalParts,resourceMetalPipe,resourceForgedSteel,resourceSpring"/>
+      </effect_group>
+    </recipe>
+    <recipe name="vehicleSherpChassis" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+      <ingredient name="resourceForgedSteel" count="300"/>
+      <ingredient name="resourceMechanicalParts" count="75"/>
+      <ingredient name="resourceDuctTape" count="40"/>
+      <ingredient name="resourceLeather" count="50"/>
+      <ingredient name="resourceElectricParts" count="75"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceLeather,resourceElectricParts"/>
+      </effect_group>
+    </recipe>
+    <recipe name="vehicleSherpBlackPlaceable" count="1" craft_time="210" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="vehicleSherpChassis" count="1"/>
+      <ingredient name="vehicleSherpAccessories" count="1"/>
+      <ingredient name="smallEngine" count="1"/>
+      <ingredient name="carBattery" count="1"/>
+    </recipe>
+    <recipe name="vehicleSherpBluePlaceable" count="1" craft_time="210" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="vehicleSherpChassis" count="1"/>
+      <ingredient name="vehicleSherpAccessories" count="1"/>
+      <ingredient name="smallEngine" count="1"/>
+      <ingredient name="carBattery" count="1"/>
+    </recipe>
+    <recipe name="vehicleSherpWhitePlaceable" count="1" craft_time="210" craft_area="workbench" tags="workbenchCrafting">
+      <ingredient name="vehicleSherpChassis" count="1"/>
+      <ingredient name="vehicleSherpAccessories" count="1"/>
+      <ingredient name="smallEngine" count="1"/>
+      <ingredient name="carBattery" count="1"/>
+    </recipe>
   </append>
 </configs>
