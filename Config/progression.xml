@@ -1,21 +1,41 @@
 <configs>
-  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']/display_entry[3]/unlock_entry/@item">
-    ,vehicleLightCycleGreenPlaceable,vehicleLightCyclePinkPlaceable,vehicleLightCycleRedPlaceable,vehicleLightCycleBluePlaceable,vehicleLightCycleYellowPlaceable,vehicleLightCycleChassis,vehicleLightCycleAccessories
-  </append>
-  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']/display_entry[4]/unlock_entry/@item">
-    ,vehicleDevilleBlackPlaceable,vehicleDevilleBluePlaceable,vehicleDevilleChassis,vehicleDevilleAccessories,vehicleFargoGreenPlaceable,vehicleFargoRedPlaceable,vehicleFargoChassis,vehicleFargoAccessories,vehicleCyberTruckPlaceable,vehicleCyberTruckChassis,vehicleCyberTruckAccessories,vehicleEcto1Placeable,vehicleEcto1Accessories,vehicleSherpBluePlaceable,vehicleSherpBlackPlaceable,vehicleSherpWhitePlaceable,vehicleSherpAccessories,vehicleSherpChassis
-  </append>
-  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']/display_entry[5]/unlock_entry/@item">
-    ,vehiclePlymouthRockPlaceable,vehiclePlymouthRockChassis,vehiclePlymouthRockAccessories,vehicleGigahorsePlaceable,vehicleGigahorseAccessories,vehicleBigFootSilverPlaceable,vehicleBigFootPurplePlaceable,vehicleBigFootAccessories
+  <!-- Light Cycles -->
+  <append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@icon='vehicleMotorcyclePlaceable']">
+    <unlock_entry item="vehicleLightCycleGreenPlaceable,vehicleLightCyclePinkPlaceable,vehicleLightCycleRedPlaceable,vehicleLightCycleBluePlaceable,vehicleLightCycleYellowPlaceable,vehicleLightCycleChassis,vehicleLightCycleAccessories" unlock_tier="2" />
   </append>
 
-  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']/effect_group/passive_effect[3]/@tags">
-    ,vehicleLightCycleGreenPlaceable,vehicleLightCyclePinkPlaceable,vehicleLightCycleRedPlaceable,vehicleLightCycleBluePlaceable,vehicleLightCycleYellowPlaceable,vehicleLightCycleChassis,vehicleLightCycleAccessories
+  <!-- Deville, Fargo, Cyber Truck, Ecto 1, Sherp -->
+  <append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@icon='vehicle4x4TruckPlaceable']">
+    <unlock_entry item="vehicleDevilleBlackPlaceable,vehicleDevilleBluePlaceable,vehicleDevilleChassis,vehicleDevilleAccessories,vehicleFargoGreenPlaceable,vehicleFargoRedPlaceable,vehicleFargoChassis,vehicleFargoAccessories,vehicleCyberTruckPlaceable,vehicleCyberTruckChassis,vehicleCyberTruckAccessories,vehicleEcto1Placeable,vehicleEcto1Accessories,vehicleSherpBluePlaceable,vehicleSherpBlackPlaceable,vehicleSherpWhitePlaceable,vehicleSherpAccessories,vehicleSherpChassis" unlock_tier="2" />
   </append>
-  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']/effect_group/passive_effect[4]/@tags">
-    ,vehicleDevilleBlackPlaceable,vehicleDevilleBluePlaceable,vehicleDevilleChassis,vehicleDevilleAccessories,vehicleFargoGreenPlaceable,vehicleFargoRedPlaceable,vehicleFargoChassis,vehicleFargoAccessories,vehicleCyberTruckPlaceable,vehicleCyberTruckChassis,vehicleCyberTruckAccessories,vehicleEcto1Placeable,vehicleEcto1Accessories,vehicleSherpBluePlaceable,vehicleSherpBlackPlaceable,vehicleSherpWhitePlaceable,vehicleSherpAccessories,vehicleSherpChassis
+
+  <!-- Plymouth Rock -->
+  <append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@icon='vehicle4x4TruckPlaceable']">
+    <unlock_entry item="vehiclePlymouthRockPlaceable,vehiclePlymouthRockChassis,vehiclePlymouthRockAccessories" unlock_tier="3" />
   </append>
-  <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']/effect_group/passive_effect[4]/@tags">
-    ,vehiclePlymouthRockPlaceable,vehiclePlymouthRockChassis,vehiclePlymouthRockAccessories,vehicleGigahorsePlaceable,vehicleGigahorseAccessories,vehicleBigFootSilverPlaceable,vehicleBigFootPurplePlaceable,vehicleBigFootAccessories
+
+  <!-- Gigahorse, Big Foot -->
+  <append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@icon='vehicle4x4TruckPlaceable']">
+    <unlock_entry item="vehicleGigahorsePlaceable,vehicleGigahorseAccessories,vehicleBigFootSilverPlaceable,vehicleBigFootPurplePlaceable,vehicleBigFootAccessories" unlock_tier="4" />
+  </append>
+
+  <!-- Tier 3 Append -->
+  <append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@icon='vehicleMotorcyclePlaceable']/@icon">,lightCycleGreenIcon</append>
+  <append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@name_key='vehiclesT3']/@name_key">,vehicleTier3_1Progression</append>
+  <append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@unlock_level='45']/@unlock_level">,55</append>
+
+  <!-- Tier 4 Append -->
+  <append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@icon='vehicle4x4TruckPlaceable']/@icon">,devilleBlackIcon,cyberTruckIcon,sherpBlackIcon,plymouthRockIcon,gigahorseIcon</append>
+  <append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@name_key='vehiclesT4']/@name_key">,vehicleTier4_1Progression,vehicleTier4_2Progression,vehicleTier4_3Progression,vehicleTier4_4Progression,vehicleTier4_5Progression</append>
+  <append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@unlock_level='70']/@unlock_level">,75,80,85,90,95</append>
+
+  <!-- Passive Effects -->
+  <append xpath="//crafting_skill[@name='craftingVehicles']/effect_group">
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="55,100" value="1" tags="vehicleLightCycleGreenPlaceable,vehicleLightCyclePinkPlaceable,vehicleLightCycleRedPlaceable,vehicleLightCycleBluePlaceable,vehicleLightCycleYellowPlaceable,vehicleLightCycleChassis,vehicleLightCycleAccessories"/>
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="vehicleDevilleBlackPlaceable,vehicleDevilleBluePlaceable,vehicleDevilleChassis,vehicleDevilleAccessories,vehicleFargoGreenPlaceable,vehicleFargoRedPlaceable,vehicleFargoChassis,vehicleFargoAccessories"/>
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="80,100" value="1" tags="vehicleCyberTruckPlaceable,vehicleCyberTruckChassis,vehicleCyberTruckAccessories,vehicleEcto1Placeable,vehicleEcto1Accessories"/>
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="85,100" value="1" tags="vehicleSherpBluePlaceable,vehicleSherpBlackPlaceable,vehicleSherpWhitePlaceable,vehicleSherpAccessories,vehicleSherpChassis"/>
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="90,100" value="1" tags="vehiclePlymouthRockPlaceable,vehiclePlymouthRockChassis,vehiclePlymouthRockAccessories"/>
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="95,100" value="1" tags="vehicleGigahorsePlaceable,vehicleGigahorseAccessories,vehicleBigFootSilverPlaceable,vehicleBigFootPurplePlaceable,vehicleBigFootAccessories"/>
   </append>
 </configs>
