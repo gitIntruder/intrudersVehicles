@@ -6,7 +6,7 @@
       <property name="CustomIcon" value="devilleChassisIcon"/>
       <property name="Tags" value="vehiclesSkill"/>
       <property name="EconomicValue" value="9000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier4"/>
       <property name="UnlockedBy" value="craftingVehicles"/>
     </item>
     <item name="vehicleDevilleAccessories">
@@ -14,7 +14,7 @@
       <property name="CustomIcon" value="devilleAccessoriesIcon"/>
       <property name="Tags" value="vehiclesSkill"/>
       <property name="EconomicValue" value="9000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier4"/>
       <property name="UnlockedBy" value="craftingVehicles"/>
     </item>
     <item name="vehicleDevilleBlackPlaceable">
@@ -23,7 +23,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/devilleBlack.unity3d?vehicleDevilleBlack.prefab"/>
       <property name="EconomicValue" value="15000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier4"/>
       <property class="Action1">
         <property name="Vehicle" value="vehicleDevilleBlack"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -40,7 +40,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/devilleBlue.unity3d?vehicleDevilleBlue.prefab"/>
       <property name="EconomicValue" value="15000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier4"/>
       <property class="Action1">
         <property name="Vehicle" value="vehicleDevilleBlue"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -59,7 +59,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/ecto1.unity3d?vehicleEcto1.prefab"/>
       <property name="EconomicValue" value="15000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier5"/>
       <property class="Action1">
         <property name="Vehicle" value="vehicleEcto1"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -75,7 +75,7 @@
       <property name="CustomIcon" value="ecto1AccessoriesIcon"/>
       <property name="Tags" value="vehiclesSkill"/>
       <property name="EconomicValue" value="9000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier5"/>
       <property name="UnlockedBy" value="craftingVehicles"/>
     </item>
 
@@ -85,7 +85,7 @@
       <property name="CustomIcon" value="fargoChassisIcon"/>
       <property name="Tags" value="vehiclesSkill"/>
       <property name="EconomicValue" value="9000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier4"/>
       <property name="UnlockedBy" value="craftingVehicles"/>
     </item>
     <item name="vehicleFargoAccessories">
@@ -93,7 +93,7 @@
       <property name="CustomIcon" value="fargoAccessoriesIcon"/>
       <property name="Tags" value="vehiclesSkill"/>
       <property name="EconomicValue" value="9000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier4"/>
       <property name="UnlockedBy" value="craftingVehicles"/>
     </item>
     <item name="vehicleFargoGreenPlaceable">
@@ -102,7 +102,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/fargoGreen.unity3d?vehicleFargoGreen.prefab"/>
       <property name="EconomicValue" value="15000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier4"/>
       <property class="Action1">
         <property name="Vehicle" value="vehicleFargoGreen"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -119,7 +119,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/fargoRed.unity3d?vehicleFargoRed.prefab"/>
       <property name="EconomicValue" value="15000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier4"/>
       <property class="Action1">
         <property name="Vehicle" value="vehicleFargoRed"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -137,7 +137,7 @@
       <property name="CustomIcon" value="bigFootAccessoriesIcon"/>
       <property name="Tags" value="vehiclesSkill"/>
       <property name="EconomicValue" value="9000"/>
-      <property name="TraderStageTemplate" value="vehiclesT5"/>
+      <property name="TraderStageTemplate" value="vehicleTier5"/>
       <property name="UnlockedBy" value="craftingVehicles"/>
     </item>
     <item name="vehicleBigFootSilverPlaceable">
@@ -146,7 +146,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/bigFootSilver.unity3d?vehicleBigFootSilver.prefab"/>
       <property name="EconomicValue" value="45000"/>
-      <property name="TraderStageTemplate" value="vehiclesT5"/>
+      <property name="TraderStageTemplate" value="vehicleTier5"/>
       <property class="Action1">
         <property name="Vehicle" value="vehicleBigFootSilver"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -163,7 +163,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/bigFootPurple.unity3d?vehicleBigFootPurple.prefab"/>
       <property name="EconomicValue" value="45000"/>
-      <property name="TraderStageTemplate" value="vehiclesT5"/>
+      <property name="TraderStageTemplate" value="vehicleTier5"/>
       <property class="Action1">
         <property name="Vehicle" value="vehicleBigFootPurple"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -181,7 +181,7 @@
       <property name="CustomIcon" value="gigahorseAccessoriesIcon"/>
       <property name="Tags" value="vehiclesSkill"/>
       <property name="EconomicValue" value="9000"/>
-      <property name="TraderStageTemplate" value="vehiclesT5"/>
+      <property name="TraderStageTemplate" value="vehicleTier5"/>
       <property name="UnlockedBy" value="craftingVehicles"/>
     </item>
     <item name="vehicleGigahorsePlaceable">
@@ -190,7 +190,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/gigahorse.unity3d?vehicleGigahorse.prefab"/>
       <property name="EconomicValue" value="45000"/>
-      <property name="TraderStageTemplate" value="vehiclesT5"/>
+      <property name="TraderStageTemplate" value="vehicleTier5"/>
       <property class="Action1">
         <property name="Vehicle" value="vehicleGigahorse"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -208,7 +208,7 @@
       <property name="CustomIcon" value="prockChassisIcon"/>
       <property name="Tags" value="vehiclesSkill"/>
       <property name="EconomicValue" value="9000"/>
-      <property name="TraderStageTemplate" value="vehiclesT5"/>
+      <property name="TraderStageTemplate" value="vehicleTier5"/>
       <property name="UnlockedBy" value="craftingVehicles"/>
     </item>
     <item name="vehiclePlymouthRockAccessories">
@@ -216,7 +216,7 @@
       <property name="CustomIcon" value="prockAccessoriesIcon"/>
       <property name="Tags" value="vehiclesSkill"/>
       <property name="EconomicValue" value="9000"/>
-      <property name="TraderStageTemplate" value="vehiclesT5"/>
+      <property name="TraderStageTemplate" value="vehicleTier5"/>
       <property name="UnlockedBy" value="craftingVehicles"/>
     </item>
     <item name="vehiclePlymouthRockPlaceable">
@@ -225,7 +225,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/plymouthRock.unity3d?vehiclePlymouthRock.prefab"/>
       <property name="EconomicValue" value="30000"/>
-      <property name="TraderStageTemplate" value="vehiclesT5"/>
+      <property name="TraderStageTemplate" value="vehicleTier5"/>
       <property class="Action1">
         <property name="Vehicle" value="vehiclePlymouthRock"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -243,7 +243,7 @@
       <property name="CustomIcon" value="lightCycleChassisIcon"/>
       <property name="Tags" value="vehiclesSkill"/>
       <property name="EconomicValue" value="9000"/>
-      <property name="TraderStageTemplate" value="vehiclesT3"/>
+      <property name="TraderStageTemplate" value="vehicleTier3"/>
       <property name="UnlockedBy" value="craftingVehicles"/>
     </item>
     <item name="vehicleLightCycleAccessories">
@@ -251,7 +251,7 @@
       <property name="CustomIcon" value="lightCycleAccessoriesIcon"/>
       <property name="Tags" value="vehiclesSkill"/>
       <property name="EconomicValue" value="9000"/>
-      <property name="TraderStageTemplate" value="vehicleT3.5"/>
+      <property name="TraderStageTemplate" value="vehicleTier3"/>
       <property name="UnlockedBy" value="craftingVehicles"/>
     </item>
     <item name="vehicleLightCycleGreenPlaceable">
@@ -260,7 +260,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/lightCycleGreen.unity3d?vehicleLightCycleGreen.prefab"/>
       <property name="EconomicValue" value="10000"/>
-      <property name="TraderStageTemplate" value="vehiclesT3"/>
+      <property name="TraderStageTemplate" value="vehicleTier3"/>
       <property class="Action1">
         <property name="Vehicle" value="vehicleLightCycleGreen"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -277,7 +277,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/lightCyclePink.unity3d?vehicleLightCyclePink.prefab"/>
       <property name="EconomicValue" value="10000"/>
-      <property name="TraderStageTemplate" value="vehiclesT3"/>
+      <property name="TraderStageTemplate" value="vehicleTier3"/>
       <property class="Action1">
         <property name="Vehicle" value="vehicleLightCyclePink"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -294,7 +294,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/lightCycleRed.unity3d?vehicleLightCycleRed.prefab"/>
       <property name="EconomicValue" value="10000"/>
-      <property name="TraderStageTemplate" value="vehiclesT3"/>
+      <property name="TraderStageTemplate" value="vehicleTier3"/>
       <property class="Action1">
         <property name="Vehicle" value="vehicleLightCycleRed"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -311,7 +311,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/lightCycleBlue.unity3d?vehicleLightCycleBlue.prefab"/>
       <property name="EconomicValue" value="10000"/>
-      <property name="TraderStageTemplate" value="vehiclesT3"/>
+      <property name="TraderStageTemplate" value="vehicleTier3"/>
       <property class="Action1">
         <property name="Vehicle" value="vehicleLightCycleBlue"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -328,7 +328,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/lightCycleYellow.unity3d?vehicleLightCycleYellow.prefab"/>
       <property name="EconomicValue" value="10000"/>
-      <property name="TraderStageTemplate" value="vehiclesT3"/>
+      <property name="TraderStageTemplate" value="vehicleTier3"/>
       <property class="Action1">
         <property name="Vehicle" value="vehicleLightCycleYellow"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -346,7 +346,7 @@
       <property name="CustomIcon" value="cyberTruckChassisIcon"/>
       <property name="Tags" value="vehiclesSkill"/>
       <property name="EconomicValue" value="9000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier4"/>
       <property name="UnlockedBy" value="craftingVehicles"/>
     </item>
     <item name="vehicleCyberTruckAccessories">
@@ -354,7 +354,7 @@
       <property name="CustomIcon" value="cyberTruckAccessoriesIcon"/>
       <property name="Tags" value="vehiclesSkill"/>
       <property name="EconomicValue" value="9000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier4"/>
       <property name="UnlockedBy" value="craftingVehicles"/>
     </item>
     <item name="vehicleCyberTruckPlaceable">
@@ -363,7 +363,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/cyberTruck.unity3d?vehicleCyberTruck.prefab"/>
       <property name="EconomicValue" value="30000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier4"/>
       <property class="Action1">
         <property name="Vehicle" value="vehicleCyberTruck"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -381,7 +381,7 @@
       <property name="CustomIcon" value="sherpChassisIcon"/>
       <property name="Tags" value="vehiclesSkill"/>
       <property name="EconomicValue" value="9000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier4"/>
       <property name="UnlockedBy" value="craftingVehicles"/>
     </item>
     <item name="vehicleSherpAccessories">
@@ -389,7 +389,7 @@
       <property name="CustomIcon" value="sherpAccessoriesIcon"/>
       <property name="Tags" value="vehiclesSkill"/>
       <property name="EconomicValue" value="9000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier4"/>
       <property name="UnlockedBy" value="craftingVehicles"/>
     </item>
     <item name="vehicleSherpBluePlaceable">
@@ -398,7 +398,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/sherpBlue.unity3d?vehicleSherpBlue.prefab"/>
       <property name="EconomicValue" value="30000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier4"/>
       <property class="Action1">
         <property name="Vehicle" value="vehicleSherpBlue"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -415,7 +415,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/sherpBlack.unity3d?vehicleSherpBlack.prefab"/>
       <property name="EconomicValue" value="30000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier4"/>
       <property class="Action1">
         <property name="Vehicle" value="vehicleSherpBlack"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
@@ -432,7 +432,7 @@
       <property name="Tags" value="vehicle,vengine,vfuel,vlight"/>
       <property name="Meshfile" value="#@modfolder:Resources/sherpWhite.unity3d?vehicleSherpWhite.prefab"/>
       <property name="EconomicValue" value="30000"/>
-      <property name="TraderStageTemplate" value="vehiclesT4"/>
+      <property name="TraderStageTemplate" value="vehicleTier4"/>
       <property class="Action1">
         <property name="Vehicle" value="vehicleSherpWhite"/>
         <property name="VehicleSize" value="2.5, 2.1, 5"/>
